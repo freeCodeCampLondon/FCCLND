@@ -11,10 +11,8 @@ browserSync.init({
 });
 
 // Static Server + watching scss/html files
-gulp.task('server', ['sass', 'script'], function() {   //WATCH SASS/ JS/ HTML FOR CHANGES
+gulp.task('server', ['sass', 'script'], function() {   //WATCH SASS, JS & HTML FILES FOR CHANGES
     gulp.watch('dev/app/assets/sass/**/*.scss', ['sass']).on('change', browserSync.reload);
     gulp.watch('dev/app/**/*.js,' ['script']).on('change', browserSync.reload);
     gulp.watch("dev/app/*.html").on('change', browserSync.reload);
-
-
 });

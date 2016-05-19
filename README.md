@@ -1,27 +1,29 @@
 
-#FCC LND web app
+# FCC LND web app
 
-Freecodecamp portal for Londoners campers
+Portal for Free Code Camp London Campers
 
-Hey guys, I have been starting developing our portal. The aim of this site is keeping track of people working at Freecodecamp track in London in order to have an easy tools to keep in touch with each other, meet new people and track at which point of the FCC track others are..so we can connect easily with others are at the same point of the track if we are willing to pair programming.
+Hey guys, I have been starting to develop our portal. The aim is to keep track of people learning with the Free Code Camp curriculum in London. This is so that we have an easy tool to keep in touch with each other, meet new people and track at which point of the FCC curriculum others are so we can easily pair program with those who are at the same point.
 
-It's supposed to  be newbie frindly to permit everyone to contribute.Therefore  it's slighly over commented, but I'm sure you with me if everyone can give a contribute to it. :)
+It's supposed to be newbie friendly to permit everyone to contribute, therefore it is slightly over-commented, but I'm sure you are with me if everyone can contribute. :)
 
-There will be issues to resolve using: CSS , HTML, JS, Gulp, Unit Test and in the future I'd like to migrate from Firebase to MongoDB - probably MongoLab- using NodeJs and ExpressJS to develop our litte CMS.
+There will be issues to resolve using: CSS, HTML, JS, Gulp, Unit Tests and in the future I'd like to migrate from Firebase to MongoDB - probably MongoLab - using NodeJS and ExpressJS to develop our litte CMS.
 
-###INSTALL
+### INSTALL
 
-``` git clone https://github.com/artitudinale1/FCCLND.git ```
+`git clone https://github.com/artitudinale1/FCCLND.git`
 
-```cd into FCCLND folder ```
+`cd` into the FCCLND folder
 
-```npm install ```
+`npm install`
 
-```bower install ```
+`bower install`
 
-``gulp ```
+Start developing with live-reload:
 
-###TECHS USED SO FAR
+`gulp`
+
+### TECH USED SO FAR
 
 * [Gulp](http://gulpjs.com/)
 
@@ -38,7 +40,7 @@ There will be issues to resolve using: CSS , HTML, JS, Gulp, Unit Test and in th
 
 
 
-###App structure
+### App Structure
 
 Ideas taken from:
 
@@ -46,4 +48,4 @@ Ideas taken from:
 
 * [Blog Rancle: Angular Gulp Best Practices](http://blog.rangle.io/angular-gulp-bestpractices/)
 
-![FCC LND app structure](/app-structure.png)
+![FCC LND app structure](./app-structure.png)

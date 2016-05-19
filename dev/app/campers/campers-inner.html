@@ -1,21 +1,23 @@
 <div>
-<article ng-click="logHello()"  class="{{campersData.class}}" ng-repeat="campersData in campersData">
-  <img ng-src="{{campersData.pic}}" />
+  <article ng-click="logHello()" class="{{campersData.class}}" ng-repeat="campersData in campersData">
+    <img ng-src="{{campersData.pic}}" />
     <div class="overlay"></div>
     <div class="corner-overlay-content">INFO</div>
-	<div class="overlay-content">
-        <h2 ng-bind-html="campersData.name"></h2>
-        <p ng-bind-html="campersData.bio"></p>
-        <p><strong>Last challenge:</strong> {{campersData.challenge}}</p>
-        <p><strong>Last update:</strong> {{campersData.date}}</p>
-        <ul>
-          <li ng-show="campersData.web"><a href="{{campersData.web}}" target="_blank"><i class="fa fa-2x fa-link" ></i></a></li>
-          <li ng-show="campersData.email"><a href="{{campersData.email}}" target="_blank"><i class="fa fa-2x fa-envelope-o" ></i></a></li>
-          <li ng-show="campersData.fcc"><a href="{{campersData.fcc}}" target="_blank"> <big>(</big> <i class="fa fa-2x fa-fire" >  </i><big>)</big></a></li>
-          <li ng-show="campersData.fb"><a href="{{campersData.fb}}" target="_blank"><i class="fa fa-2x fa-facebook-official" ></i></a></li>
-          <li ng-show="campersData.tw"><a href="{{campersData.tw}}" target="_blank"><i class="fa fa-2x fa-twitter" ></i></a></li>
-          <li ng-show="campersData.lk"><a href="{{campersData.lk}}" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a></li>
-        </ul>
-     </div>
-</article>
+    <div class="overlay-content">
+      <h2 ng-bind-html="campersData.name"></h2>
+      <p ng-bind-html="campersData.bio"></p>
+      <p><strong>Last challenge:</strong> {{campersData.challenge}}</p>
+      <p><strong>Last update:</strong> {{campersData.date}}</p>
+      <ul>
+        <li ng-show="campersData.web"><a href="{{campersData.web}}" target="_blank"><i class="fa fa-2x fa-link" ></i></a></li>
+        <li ng-show="campersData.email"><a href="{{campersData.email}}" target="_blank"><i class="fa fa-2x fa-envelope-o" ></i></a></li>
+        <li ng-show="campersData.fcc">
+          <a href="{{campersData.fcc}}" target="_blank"> <big>(</big> <i class="fa fa-2x fa-fire">  </i><big>)</big></a>
+        </li>
+        <li ng-show="campersData.fb"><a href="{{campersData.fb}}" target="_blank"><i class="fa fa-2x fa-facebook-official" ></i></a></li>
+        <li ng-show="campersData.tw"><a href="{{campersData.tw}}" target="_blank"><i class="fa fa-2x fa-twitter" ></i></a></li>
+        <li ng-show="campersData.lk"><a href="{{campersData.lk}}" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </article>
 </div>

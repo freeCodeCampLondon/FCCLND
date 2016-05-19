@@ -1,8 +1,23 @@
 {
   "name": "fcclnd-app",
   "version": "1.0.0",
-  "description": "Freecodecamp portal for Londoners campers",
+  "description": "Portal for FreeCodeCamp London Campers",
+  "authors": [
+    "alex <alex.garulli@kurtgeiger.com>"
+  ],
   "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artitudinale1/FCCLND.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/artitudinale1/FCCLND/issues"
+  },
   "dependencies": {
     "browser-sync": "^2.12.7",
     "gulp": "^3.9.1",
@@ -12,13 +27,5 @@
     "gulp-sass": "^2.3.1",
     "require-dir": "^0.3.0",
     "wiredep": "^4.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-   "authors": [
-    "alex <alex.garulli@kurtgeiger.com>"
-  ],
-
-  "license": "ISC"
+  }
 }

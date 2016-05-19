@@ -1,2 +1,28 @@
-/bower_components
-/node_modules
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Desktop.ini
+Thumbs.db
+
+# Linux
+*~
+
+# Dependency Directories
+node_modules
+bower_components
+
+# Logs
+logs
+*.log*
+
+# Temporary Files
+.tmp
+.sass-cache
+
+# Compile directory
+dist
+public

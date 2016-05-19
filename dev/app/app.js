@@ -10,7 +10,7 @@
  */
 
 var app = angular.module('fccLnd', [
-	'firebase',
-    'ngRoute',
-    'ngSanitize'
-  ])
+  'firebase',
+  'ngRoute',
+  'ngSanitize'
+])

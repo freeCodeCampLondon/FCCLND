@@ -1,49 +1,56 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>
-		FCC LND app
-	</title>
-  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    FCC LND app
+  </title>
+
+
   <!-- bower:css -->
   <link rel="stylesheet" href="../../bower_components/bootstrap-css-only/css/bootstrap.css" />
   <!-- endbower -->
- 
- <!-- I COULDN'T MANAGE TO INJECT FOLLOW FILES WITH GULP DISPITE OVERWITES -->
- <!-- THOSE JS NEED TO BE CALLED IN HEADER COS ARE DOM MANIPULATION   -->
+
+  <!-- I COULDN'T MANAGE TO INJECT THE FOLLOWING FILES WITH GULP DESPITE OVERWRITES -->
+  <!-- THESE JS NEED TO BE CALLED IN THE HEADER FOR DOM MANIPULATION   -->
   <script src="../../bower_components/isotope/js/jquery-1.7.1.min.js"></script>
   <script src="../../bower_components/isotope/jquery.isotope.js"></script>
   <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" />
 
-  
+
   <!-- inject:css -->
   <link rel="stylesheet" href="/assets/css/main.css">
   <!-- endinject -->
-  </head>
+</head>
 
-  <body ng-app="fccLnd">
+<body ng-app="fccLnd">
 
-    <header>
-      <div class="col-md-2 col-sm-5 col-xs-6">
-        <a href="http://www.freecodecamp.com" target="_blank">
-          <img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="learn to code javascript at Free Code Camp logo London campers site" />
-        </a>
-          <small>London UK Campers</small>
-      </div>
-      <ul class="nav nav-tabs" ng-controller="HeaderController">
-         <li role="presentation"  ng-class="{ active: isActive('/')}"><a href="/#/">Home</a></li>
-         <li role="presentation"  ng-class="{ active: isActive('/campers')}"><a href="#/campers/">Campers</a></li>
-      </ul>
-    </header>
-
-    <div class="container">
-        <div ng-view="">
-        </div>
+  <header>
+    <div class="col-md-2 col-sm-5 col-xs-6">
+      <a href="http://www.freecodecamp.com" target="_blank">
+        <img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg" alt="learn to code javascript at Free Code Camp logo London campers site" />
+      </a>
+      <small>London UK Campers</small>
     </div>
+    <ul class="nav nav-tabs" ng-controller="HeaderController">
+      <li role="presentation" ng-class="{ active: isActive('/')}"><a href="/#/">Home</a></li>
+      <li role="presentation" ng-class="{ active: isActive('/campers')}"><a href="#/campers/">Campers</a></li>
+    </ul>
+  </header>
 
-    <footer>
-      
-    </footer>
-  
+  <div class="container">
+    <div ng-view="">
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+
   <!-- bower:js-->
   <script src="../../bower_components/angular/angular.js"></script>
   <script src="../../bower_components/angular-route/angular-route.js"></script>
@@ -58,11 +65,10 @@
   <script src="/app.routes.js"></script>
   <script src="/campers/campers.controller.js"></script>
   <script src="/campers/campers.directive.js"></script>
-  <script src="/shared/controller.js"></script>
   <script src="/main/main.controller.js"></script>
+  <script src="/shared/controller.js"></script>
   <script src="/shared/services/services.js"></script>
   <!-- endinject -->
 </body>
+
 </html>
-
-
