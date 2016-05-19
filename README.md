@@ -3,9 +3,9 @@
 
 Portal for Free Code Camp London Campers
 
-Hey guys, I have been starting to develop our portal. The aim of is to keep track of people learning with the Free Code Camp curriculum in London. This is so that we have an easy tool to keep in touch with each other, meet new people and track at which point of the FCC curriculum others are so we can easily pair program with those who are at the same point.
+Hey guys, I have been starting to develop our portal. The aim is to keep track of people learning with the Free Code Camp curriculum in London. This is so that we have an easy tool to keep in touch with each other, meet new people and track at which point of the FCC curriculum others are so we can easily pair program with those who are at the same point.
 
-It's supposed to be newbie friendly to permit everyone to contribute, therefore it is slightly over-commented, but I'm sure you are with me if everyone can contribute to it. :)
+It's supposed to be newbie friendly to permit everyone to contribute, therefore it is slightly over-commented, but I'm sure you are with me if everyone can contribute. :)
 
 There will be issues to resolve using: CSS, HTML, JS, Gulp, Unit Tests and in the future I'd like to migrate from Firebase to MongoDB - probably MongoLab - using NodeJS and ExpressJS to develop our litte CMS.
 
