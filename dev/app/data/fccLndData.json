@@ -10,7 +10,7 @@
       ],
       "campers":[
          {
-            "name":"Camper 1",
+            "name":"working from local json",
             "class":"frontend react html-css bootstrap FE-projects",
             "bio":"Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
             "pic":"assets/images/camper.png",
