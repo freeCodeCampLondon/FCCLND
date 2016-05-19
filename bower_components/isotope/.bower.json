@@ -1,0 +1,14 @@
+{
+  "name": "isotope",
+  "homepage": "https://github.com/metafizzy/isotope",
+  "version": "1.5.21",
+  "_release": "1.5.21",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.5.21",
+    "commit": "0122ff05f53115c5f1a0f870929a0787bf5ddf08"
+  },
+  "_source": "https://github.com/metafizzy/isotope.git",
+  "_target": "1.5.21",
+  "_originalSource": "isotope"
+}
