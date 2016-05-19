@@ -13,16 +13,16 @@ app.directive('isoRepeat', function ($timeout) {
                 layoutMode: 'fitRows',
                 sortAscending: true
             };
-            
+
             element.isotope(options);
             $scope.element = element
-            
+
             $scope.$watch('campersData', function(newVal, oldVal){
                $timeout(function(){
-                    element.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' }); 
+                    element.isotope( 'reloadItems' ).isotope({ sortBy: 'original-order' });
                });
             },true);
-            
+
             $scope.logHello = function(){
               element.isotope( 'reLayout')
             }
@@ -76,7 +76,7 @@ app.directive('isoRepeat', function ($timeout) {
             element.isotope({filter: 'adv-FE-projects'})
         }
 
-           
+
 
  //DATA VISUAL
             $scope.filterSass = function(){
@@ -114,7 +114,7 @@ app.directive('isoRepeat', function ($timeout) {
             $scope.filterMongoDB = function(){
                 element.isotope({  filter: '.MongoDB'})
             }
-            
+
             $scope.filterWebProj = function(){
                 element.isotope({  filter: '.web-project'})
             }

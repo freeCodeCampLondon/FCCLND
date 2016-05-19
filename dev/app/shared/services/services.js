@@ -1,11 +1,11 @@
 (function() {
     'use strict';
     //SERVICE FOR AJAX CALL TO LOCAL JSON - UNCOMMENT THIS IF WANT WORK WITH LOCAL JSON
-    
+
     // NAME OF FIRST CAMERS SHOULD BE @WORKING FROM LOCAL JSON"
-    
+
     //IN campers.controller.js and main.controller.js YOU HAVE TO UNCOMMENT RIGHT BODY CONTROLLER
-    
+
     /*
     app.factory('getData', function($http) {
     var getData = {
@@ -23,7 +23,7 @@
     });*/
 
     //SERVICE FOR AJAX CALL TO FIREBASE
-    
+
     // NAME OF FIRST CAMERS SHOULD BE "WORKING FROM FIREBASE"
     app.factory('getData', ['$firebaseObject', function($firebaseObject){
       var getData = {
@@ -37,7 +37,5 @@
         }
         return getData;
       }])
-            
+
 })();
-
-
