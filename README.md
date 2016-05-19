@@ -11,9 +11,9 @@ There will be issues to resolve using: CSS , HTML, JS, Gulp, Unit Test and in th
 
 ###INSTALL
 
-``` git clone CLONETHISREPO ```
+``` git clone https://github.com/artitudinale1/FCCLND.git ```
 
-```cd into REPOFOLDRE ```
+```cd into FCCLND folder ```
 
 ```npm install ```
 
