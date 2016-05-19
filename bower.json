@@ -3,7 +3,7 @@
   "authors": [
     "alex <alex.garulli@kurtgeiger.com>"
   ],
-  "description": "FreeCodeCamp Londoners Uk Campers",
+  "description": "Portal for FreeCodeCamp London Campers",
   "main": "app.js",
   "license": "MIT",
   "homepage": "app/index.html",
