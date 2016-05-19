@@ -1,12 +1,10 @@
 (function() {
-    'use strict';
+  'use strict';
+  app.controller('HeaderController', HeaderController)
 
-
-        app.controller('HeaderController', HeaderController)
-function HeaderController($scope, $location)
-{
-    $scope.isActive = function (viewLocation) {
-        return viewLocation === $location.path();
+  function HeaderController($scope, $location) {
+    $scope.isActive = function(viewLocation) {
+      return viewLocation === $location.path();
     };
-}
+  }
 })();
