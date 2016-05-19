@@ -46,3 +46,4 @@ Ideas taken from:
 
 * [Blog Rancle: Angular Gulp Best Practices](http://blog.rangle.io/angular-gulp-bestpractices/)
 
+![FCC LND app structure](/app-structure.png)
