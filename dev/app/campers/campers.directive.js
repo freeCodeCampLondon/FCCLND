@@ -7,8 +7,6 @@ app.directive('isoRepeat', function ($timeout) {
         },
         templateUrl: "campers/campers-inner.html",
         link: function ($scope, element, attrs) {
-            console.log($scope.campersData)
-            console.log('from D')
             var options = {
                 animationEngine : 'jquery',
                 itemSelector: 'article',
