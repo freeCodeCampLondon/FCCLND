@@ -1,6 +1,8 @@
 
 # FCC LND web app
 
+[![Join the chat at https://gitter.im/artitudinale1/FCCLND](https://badges.gitter.im/artitudinale1/FCCLND.svg)](https://gitter.im/artitudinale1/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Portal for Free Code Camp London Campers
 
 Hey guys, I have been starting to develop our portal. The aim is to keep track of people learning with the Free Code Camp curriculum in London. This is so that we have an easy tool to keep in touch with each other, meet new people and track at which point of the FCC curriculum others are so we can easily pair program with those who are at the same point.
