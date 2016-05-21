@@ -31,8 +31,8 @@ app.directive('isoRepeat', function($timeout, $window) {
        });
 
 
-      $scope.logHello = function() {
-          element.isotope('reLayout')
+      $scope.onCampersClick = function() {
+        element.isotope('shuffle'); //THAT S HAPPEN on RESIZE
         }
         // FILTERING FUNCTIONS
         // FIRST LEVEL
