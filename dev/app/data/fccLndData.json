@@ -24,13 +24,13 @@
             "date":"24/4/16"
          },
          {
-            "name":"Camper 2",
-            "class":"frontend react adv-FE-projects",
-            "bio":"Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-            "pic":"assets/images/camper.png",
-            "fcc":"http://google.com",
-            "challenge":"Pig Latin",
-            "date":"24/4/16"
+            "name":"Danny Lewis",
+            "class":"Dynamic Web Application Projects",
+            "bio":"Hi I'm Danny, I've been programming for a few years, recently started focussing on Javascipt",
+            "pic":"assets/images/dann-lewis.jpg",
+            "fcc":"https://www.freecodecamp.com/silverwedding",
+            "challenge":"Build a Voting App",
+            "date":"21/5/16"
          },
          {
             "name":"Camper 3",
