@@ -1,4 +1,7 @@
-app.directive('isoRepeat', function($timeout) {
+app.directive('isoRepeat', function($timeout, $window) {
+ 
+ var width = $window.innerWidth;
+
   return {
     $scope: {
       items: '=isoRepeat'
@@ -17,11 +20,16 @@ app.directive('isoRepeat', function($timeout) {
 
       $scope.$watch('campersData', function(newVal, oldVal) {
         $timeout(function() {
-          element.isotope('reloadItems').isotope({
-            sortBy: 'original-order'
-          });
+          element.isotope('reloadItems').isotope();
+          element.isotope('shuffle'); //THAT S HAPPEN WHEN LOAD PAGE
         });
       }, true);
+
+      angular.element($window).bind('resize', function(){
+         width = $window.innerWidth;
+         element.isotope('shuffle'); //THAT S HAPPEN on RESIZE
+       });
+
 
       $scope.logHello = function() {
           element.isotope('reLayout')
