@@ -10,7 +10,7 @@
       <p><strong>Last update:</strong> {{campersData.date}}</p>
       <ul>
         <li ng-show="campersData.web"><a href="{{campersData.web}}" target="_blank"><i class="fa fa-2x fa-link" ></i></a></li>
-        <li ng-show="campersData.email"><a href="{{campersData.email}}" target="_blank"><i class="fa fa-2x fa-envelope-o" ></i></a></li>
+        <li ng-show="campersData.email"><a href="mailto:{{campersData.email}}" target="_blank"><i class="fa fa-2x fa-envelope-o" ></i></a></li>
         <li ng-show="campersData.fcc">
           <a href="{{campersData.fcc}}" target="_blank"> <big>(</big> <i class="fa fa-2x fa-fire">  </i><big>)</big></a>
         </li>

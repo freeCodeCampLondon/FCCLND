@@ -97,7 +97,7 @@ app.directive('isoRepeat', function($timeout, $window) {
       }
       $scope.filterInterAlg = function() {
         element.isotope({
-          filter: ' inter-alghorithm'
+          filter: ' .inter-alghorithm'
         })
       }
       $scope.filterAdvAlg = function() {
