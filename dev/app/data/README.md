@@ -49,6 +49,8 @@ Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and 
     target="_blank"
  ```
  This way our little page will be still on user sight.
+ 
+ We suggest you bio to be not longer than 120 words to avoid break layout. 
 
 **name** - your name -> REQUIRED
 
