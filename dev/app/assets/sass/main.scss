@@ -257,9 +257,9 @@ div[class^='-filter'],div[class*='-filter']{
 
 @media screen and (max-width: 1500px) {
     .isotope-item {
-     // width: 30%;
       border: none;
     }
+
     .overlay-content{
       font-size: 0.9em;
     }
@@ -267,19 +267,12 @@ div[class^='-filter'],div[class*='-filter']{
 
 /* Responsive: Portrait tablets and up */
 @media screen and (max-width: 999px) {
-    .isotope-item {
-    //  width: 40%;
-    }
     .overlay-content{
       font-size: 0.8em;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .isotope-item {
-     // width: 100%;
-    }
-
     .overlay-content{
       font-size: 1em;
     }
