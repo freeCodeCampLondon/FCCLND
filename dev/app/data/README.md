@@ -2,8 +2,9 @@
 
 
 You should duplicate/fill in a JSON block of thi kind:
+```
 
-```{
+          {
             "name":"Camper 3",
             "class":"frontend react html-css bootstrap FE-projects",
             "bio":"Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
