@@ -22,20 +22,25 @@ You should duplicate/fill in a JSON block of thi kind:
 
 pay attention that if your not first camper the block over your should end with
 
+```
 '},'
+```
 
 and again if you have other campers after your json block, your one need to end:
 
-
+```
 '},'
+```
 
 If you are the last campers in the JSON don't worry about comma, but should have other parenthesis after:
 
+```
 '         } //CLOSING YOU JSON BLOCK
       ]
    }
 }
 '
+```
 
 ###Filling in
 
