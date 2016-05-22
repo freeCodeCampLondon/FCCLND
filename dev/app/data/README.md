@@ -44,6 +44,12 @@ If you are the last campers in the JSON don't worry about comma, but should have
 
 ###Filling in
 
+Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and quick style on it. Mainly you may want to use it for your Bio info. Just rememberif you are inserting a ling to put
+ ```
+    target="_blank"
+ ```
+ This way our little page will be still on user sight.
+
 **name** - your name -> REQUIRED
 
 **class** - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED
