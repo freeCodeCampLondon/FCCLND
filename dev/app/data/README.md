@@ -70,7 +70,7 @@ FILTERING SECOND LEVEL :
 
 4. Object Orientedand Functional Programming- class = "opp-f"
 
-5 Basic Algorithm Scripting - class = 'basic-alghorithm'
+5. Basic Algorithm Scripting - class = 'basic-alghorithm'
 
 6. AJAX - class ='ajax'
 
