@@ -44,9 +44,9 @@ If you are the last campers in the JSON don't worry about comma, but should have
 
 ###Filling in
 
-*name* - your name -> REQUIRED
+**name** - your name -> REQUIRED
 
-*class* - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED
+**class** - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED
 
 ####*Class you can use:*####
 
@@ -113,22 +113,22 @@ FILTERING SECOND LEVEL :
 You can have more than one class for all FCC session you have been completed .
 
 
-*bio*- your presentation -> REQUIRED
+**bio**- your presentation -> REQUIRED
 
-*pic* - path to your image es: assets/images/your-name.png" -> REQUIRED
+**pic** - path to your image es: assets/images/your-name.png" -> REQUIRED
 
-*email* - youremail@something.com"   -> NOT COMPULSORY
+**email** - youremail@something.com"   -> NOT COMPULSORY
 
-*fcc*  -  path to your freecodecamp profile - -> REQUIRED
+**fcc**  -  path to your freecodecamp profile - -> REQUIRED
 
-*tw* - path to your Twitter page -> NOT COMPULSORY
+**tw** - path to your Twitter page -> NOT COMPULSORY
 
-*lk*: - path to your LinkInd page -> NOT COMPULSORY
+**lk**: - path to your LinkInd page -> NOT COMPULSORY
 
-*web*  - path to your website / portfolio -> NOT COMPULSORY
+**web**  - path to your website / portfolio -> NOT COMPULSORY
 
-*fb* - path to your facebook -> NOT COMPULSORY
+**fb** - path to your facebook -> NOT COMPULSORY
 
-*challenge* - Last  challenge performed or performing on FCC -> REQUIRED
+**challenge** - Last  challenge performed or performing on FCC -> REQUIRED
 
-*date* - date on which your updating status on FCC LND -> REQUIRED
+**date** - date on which your updating status on FCC LND -> REQUIRED
