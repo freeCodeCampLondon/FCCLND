@@ -11,7 +11,6 @@
 
     
       getData.async().then(function(data) {
-        $scope.debug = "You are now working retriving data from local JSON"
         $scope.mainData = data["FccLond-data"]["main"][0];
        });
     
@@ -22,7 +21,6 @@
     
 
      /*getData.async().then(function(data) {
-      $scope.debug = "You are now working retriving data from Firebase"
       $scope.mainData = data.main[0];
     })*/
   }

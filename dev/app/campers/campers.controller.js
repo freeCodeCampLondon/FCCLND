@@ -9,7 +9,6 @@
 
  
       getData.async().then(function(data) {
-          $scope.debug = "You are now working retriving data from local JSON"
           $scope.campersData = data["FccLond-data"]["campers"]
       });
       
@@ -18,7 +17,6 @@
     // COMMENT THIS OUT IF YOU WANT TO WORK WITH LOCAL JSON
     // THE NAME OF THE FIRST CAMPERS SHOULD BE "WORKING FROM FIREBASE"
      /*getData.async().then(function(data) {
-      $scope.debug = "You are now working retriving data from Firebase";      
       $scope.campersData = data.campers;
     })*/
   }
