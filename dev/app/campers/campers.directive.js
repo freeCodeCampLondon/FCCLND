@@ -29,11 +29,7 @@ app.directive('isoRepeat', function($timeout, $window) {
          width = $window.innerWidth;
          element.isotope('shuffle'); //THAT S HAPPEN on RESIZE
        });
-
-
-      $scope.onCampersClick = function() {
-        element.isotope('shuffle'); //THAT S HAPPEN on RESIZE
-        }
+      
         // FILTERING FUNCTIONS
         // FIRST LEVEL
       $scope.filterFE = function() {
