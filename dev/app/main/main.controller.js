@@ -1,3 +1,5 @@
+
+
 (function() {
   'use strict';
   app.controller('mainC', mainC)
@@ -10,13 +12,16 @@
     /*
       getData.async().then(function(data) {
         $scope.mainData = data["FccLond-data"]["main"][0];
-  	   });
-  	*/
+       });
+    */
+    
 
     // CONTROLLER BODY FOR AJAX CALL TO FIREBASE
     // COMMENT THIS OUT IF YOU WANT TO WORK WITH LOCAL JSON
     // NAME OF THE FIRST CAMPERS SHOULD BE "WORKING FROM FIREBASE"
-    getData.async().then(function(data) {
+    
+
+     getData.async().then(function(data) {
       $scope.mainData = data.main[0];
     })
   }

@@ -139,6 +139,10 @@ section article {
     width:100%;
     margin: 2%;
   }
+  a, a:visited, a:hover{
+    color: $white;
+    text-decoration: underline;
+  }
 }
 
 
