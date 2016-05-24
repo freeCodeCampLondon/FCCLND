@@ -108,6 +108,9 @@ section article {
   .isotope-item img {
     width: 100%;
     margin: 2%; }
+  .isotope-item a, .isotope-item a:visited, .isotope-item a:hover {
+    color: #ffffff;
+    text-decoration: underline; }
 
 .isotope-item:hover .corner-overlay-content {
   opacity: 0;
