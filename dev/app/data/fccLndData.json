@@ -25,11 +25,12 @@
          },
          {
             "name":"Danny Lewis",
-            "class":"Dynamic Web Application Projects",
+            "class":"web-project",
             "bio":"Hi I'm Danny, I've been programming for a few years, recently started focussing on Javascipt",
-            "pic":"assets/images/dann-lewis.jpg",
+            "pic":"assets/images/danny-lewis.jpg",
             "fcc":"https://www.freecodecamp.com/silverwedding",
             "challenge":"Build a Voting App",
+            "web":"http://dannylewis.uk",
             "date":"21/5/16"
          },
          {
