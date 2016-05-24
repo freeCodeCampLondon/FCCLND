@@ -4,7 +4,7 @@
          {
             "text":"<p>We are a local group for <a href='http:www.freecodecamp.com' target='_blank'>Free Code Camp</a>: an open source community that helps you learn to code.</p><p> We are open to whoever wants to learn with Free Code Camp which currently focuses on full stack JavaScript development.</p><p>We organise regular meet-ups to encourage and support each other through the Free Code Camp curriculum.</p>",
             "pic":"assets/images/skills-matter-logo.png",
-            "fbText": "So if you are looking for a study group or someone to pair programming on FCC challenges with - join the discussion on our group <a href=\"https://www.facebook.com/groups/free.code.camp.london/' target='_blank' \"></p><p class='text-center'><i class='fa fa-3x  fa-facebook-official'></i></a>",
+            "fbText": "So if you are looking for a study group or someone to pair programming on FCC challenges with - join the discussion on our group <a href=\"https://www.facebook.com/groups/free.code.camp.london/\" target='_blank' \"></p><p class='text-center'><i class='fa fa-3x  fa-facebook-official'></i></a>",
             "skillsMatterText": "Currently our meet-ups are hosted by: <br/> <address class='text-center'>Skills Matter | CodeNode, <br/> 10 South Place, London, <br/> EC2M 7EB, GB </address>If you wish to take part at our meet-ups please endure your place registering at <a href='https://skillsmatter.com/groups/10630-freecodecamp' target='_blank'>FCC LND @ Skills Matter</a> "
          }
       ],
@@ -25,18 +25,35 @@
          },
          {
             "name":"Danny Lewis",
-            "class":"Dynamic Web Application Projects",
+            "class":"web-project",
             "bio":"Hi I'm Danny, I've been programming for a few years, recently started focussing on Javascipt",
-            "pic":"assets/images/dann-lewis.jpg",
+            "pic":"assets/images/danny-lewis.jpg",
             "fcc":"https://www.freecodecamp.com/silverwedding",
             "challenge":"Build a Voting App",
+            "web":"http://dannylewis.uk",
             "date":"21/5/16"
+         },
+         
+         {
+            "name":"Alex Garulli",
+            "class": "frontend backend html-css bootstrap FE-projects opp-f basic-alghorithm ajax inter-FE inter-alghorithm test-debug git nodeExpress",
+            "bio":"Hi I'm Alex, <br/> Contractor Frontend Web Developer<br/>Mentor @ <a href=\"http://coderbrixton.com/\"  target='_blank' > Coder Brixton</a><br/>Organiser <a href=\"https://www.facebook.com/groups/free.code.camp.london/\"> London FCC</a><br/>Code enthusiastic</br>Vegan</br>Music: Jazz, Metal, Classic, Dub, Punk ",
+            "pic":"assets/images/alex-garulli.jpg",
+            "email":"alex.garulli@gmail.com",
+            "tw":"https://twitter.com/artitudinale",
+            "lk":"https://www.linkedin.com/in/artitudinale",
+            "web":"http://artitudinale.org.uk/",
+            "fb":"https://www.facebook.com/artitudinale",
+            "fcc":"https://www.freecodecamp.com/artitudinale1",
+            "challenge":"Build a Random Quote Machine",
+            "date":"22/5/16"
          },
          {
             "name":"Camper 3",
             "class":"frontend",
             "bio":"Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
             "pic":"assets/images/camper.png",
+            "email":"alex.garulli@gmail.com",
             "tw":"http://google.com",
             "lk":"http://google.com",
             "web":"http://google.com",

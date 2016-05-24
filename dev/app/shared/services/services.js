@@ -19,6 +19,7 @@
         };
     return getData;
     });
+
   */
 
   // SERVICE FOR AJAX CALL TO FIREBASE
@@ -36,5 +37,5 @@
     }
     return getData;
   }])
-
+  
 })();
