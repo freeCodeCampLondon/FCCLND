@@ -2,8 +2,9 @@
 
 
 You should duplicate/fill in a JSON block of thi kind:
+```
 
-'         {
+          {
             "name":"Camper 3",
             "class":"frontend react html-css bootstrap FE-projects",
             "bio":"Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
@@ -17,30 +18,43 @@ You should duplicate/fill in a JSON block of thi kind:
             "challenge":"Pig Latin",
             "date":"24/4/16"
          },
-'
+```
 
 pay attention that if your not first camper the block over your should end with
 
+```
 '},'
+```
 
 and again if you have other campers after your json block, your one need to end:
 
-
+```
 '},'
+```
 
 If you are the last campers in the JSON don't worry about comma, but should have other parenthesis after:
 
+```
 '         } //CLOSING YOU JSON BLOCK
       ]
    }
 }
 '
+```
 
 ###Filling in
 
-*name* - your name -> REQUIRED
+Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and quick style on it. Mainly you may want to use it for your Bio info. Just rememberif you are inserting a ling to put
+ ```
+    target="_blank"
+ ```
+ This way our little page will be still on user sight.
+ 
+ We suggest you bio to be not longer than 120 words to avoid break layout. 
 
-*class* - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED
+**name** - your name -> REQUIRED
+
+**class** - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED
 
 ####*Class you can use:*####
 
@@ -64,7 +78,7 @@ FILTERING SECOND LEVEL :
 
 4. Object Orientedand Functional Programming- class = "opp-f"
 
-5 Basic Algorithm Scripting - class = 'basic-alghorithm'
+5. Basic Algorithm Scripting - class = 'basic-alghorithm'
 
 6. AJAX - class ='ajax'
 
@@ -107,22 +121,22 @@ FILTERING SECOND LEVEL :
 You can have more than one class for all FCC session you have been completed .
 
 
-*bio*- your presentation -> REQUIRED
+**bio**- your presentation -> REQUIRED
 
-*pic* - path to your image es: assets/images/your-name.png" -> REQUIRED
+**pic** - path to your image es: assets/images/your-name.png" -> REQUIRED
 
-*email* - youremail@something.com"   -> NOT COMPULSORY
+**email** - youremail@something.com"   -> NOT COMPULSORY
 
-*fcc*  -  path to your freecodecamp profile - -> REQUIRED
+**fcc**  -  path to your freecodecamp profile - -> REQUIRED
 
-*tw* - path to your Twitter page -> NOT COMPULSORY
+**tw** - path to your Twitter page -> NOT COMPULSORY
 
-*lk*: - path to your LinkInd page -> NOT COMPULSORY
+**lk**: - path to your LinkInd page -> NOT COMPULSORY
 
-*web*  - path to your website / portfolio -> NOT COMPULSORY
+**web**  - path to your website / portfolio -> NOT COMPULSORY
 
-*fb* - path to your facebook -> NOT COMPULSORY
+**fb** - path to your facebook -> NOT COMPULSORY
 
-*challenge* - Last  challenge performed or performing on FCC -> REQUIRED
+**challenge** - Last  challenge performed or performing on FCC -> REQUIRED
 
-*date* - date on which your updating status on FCC LND -> REQUIRED
+**date** - date on which your updating status on FCC LND -> REQUIRED
