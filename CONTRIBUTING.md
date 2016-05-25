@@ -6,15 +6,21 @@ We welcome and encourage pull requests from members of our Free Code Camp study 
 2.  Let us know that you want to help by posting a comment on the issue.
 3.  If you need help or want to discuss further feel free to leave a message in our [![Join the chat at https://gitter.im/artitudinale1/FCCLND](https://badges.gitter.im/artitudinale1/FCCLND.svg)](https://gitter.im/artitudinale1/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 4.  [Fork and clone](#forking-and-cloning-locally) the main repository
-5.  Create a new branch named appropriately for the issue you are working on. e.g. `fix/mobile-responsive`, `feature/navbar`
+5.  Create a new branch named according to the issue you are working on. The name should be prefixed as in the below table:
+
+    | Type               | Prefix            | Example                      |
+    |---                 |---                |---                           |
+    | Bug Fix            | `fix/`            | `fix/camper-height`          |
+    | Enhancement        | `feature/`        | `feature/navbar`             |
+    | Camper Data Update | `update/`         | `update/your-name`           |
 
     `git checkout -b type/branch-name`
 
 6.  Work on the issue, committing to this new branch.
 7.  When you have finished commit all your changes and [rebase from upstream](#rebasing-from-upstream)
-8.  Push your branch up to your fork
+8.  [Submit your Pull Request](#submitting-a-pull-request)
+9.  Your Pull Request will be reviewed by members of the core team before being merged to the main repository. You may be asked to make further changes before the Pull Request is accepted.
 
-    `git push origin type/branch-name`
 
 ## Forking and Cloning Locally
 
@@ -31,11 +37,6 @@ We welcome and encourage pull requests from members of our Free Code Camp study 
 
     `git remote add upstream https://github.com/artitudinale1/FCCND.git`
 
-5.  Create a new branch with a short name describing the issue you are working on. e.g.
-
-    `git checkout -b branchName`
-
-6.  Work on your issue, committing to this branch.
 
 ## Rebasing from Upstream
 
@@ -49,7 +50,7 @@ Before making your Pull Request you need to make sure that you are up to date wi
 
     `git pull --rebase upstream master`
 
-3.  (Optional) Push `master` to your fork for good measure. ()
+3.  (Optional) Push `master` to your fork for good measure.
 
     `git push origin master --force`
 
@@ -67,6 +68,15 @@ Before making your Pull Request you need to make sure that you are up to date wi
 
 7.  You are now ready to submit a Pull Request
 
+
 ## Submitting a Pull Request
 
-1.  Submit a Pull Request making reference to the issue number in the description (not the title) e.g. \#12 (further guidance here: <https://help.github.com/articles/using-pull-requests/>)
+1.  Once you have pushed all your changes to your fork navigate to the GitHub page for your fork.
+2.  In the Branch menu, choose the branch that you were working on.
+3.  On the right of the page click on **New Pull Request**
+4.  Change the title to short description of the issue you have worked on
+5.  In the Comment section write a brief outline of the changes you have made.
+6.  End the comment with a new line with the text 'Closes' followed by a '#' and the issue number that your Pull Request relates to. e.g. `Closes #4`
+7.  Click on **Create pull request**
+8.  Your Pull Request will be reviewed by the core team before being merged into the main repository.
+  
