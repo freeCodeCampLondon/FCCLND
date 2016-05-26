@@ -45,13 +45,15 @@ After you filled the JSON you can verify you have been filled correcly using too
 
 ###Filling in
 
-Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and quick style on it. Mainly you may want to use it for your Bio info. Just rememberif you are inserting a ling to put
+Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and quick style on it. Mainly you may want to use it for your Bio info.
+
+Just remember if you are inserting a link to add:
  ```
     target="_blank"
  ```
  This way our little page will be still on user sight.
  
- We suggest you bio to be not longer than 120 words to avoid break layout. 
+ We suggest your bio to be not longer than 120 words to avoid break layout. 
 
 **name** - your name -> REQUIRED
 
@@ -61,13 +63,13 @@ Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and 
 
 The first level of filtering highlight which of the major FCC session Campers is working or has been working at. Every campers should have one or more. Please insert the session you are working on along with the past one if you are available to help other people with those.
 
-FILETERING FIRST LEVEL:
+#####*FILETERING FIRST LEVEL:*#####
 
-1. FRONTEND - class = "frontend"
+1. FRONTEND -  `class = "frontend"`
 
-2. DATA VISUALIZATION - class = "data-visual"
+2. DATA VISUALIZATION - `class = "data-visual"`
 
-3. BACKEND - class =" backend"
+3. BACKEND - `class =" backend"`
 
 The second level of filtering is pinpoint out exaclty at where point of the FCC you are. You can have more than one and even all the ones you have completed as long as you are willing help people are at that track point.
 
@@ -75,56 +77,56 @@ FILTERING SECOND LEVEL :
 
 *FRONTEND*
 
-1. HTML5 and CSS - class ="html-css"
+1. HTML5 and CSS - `class ="html-css"`
 
-2. Responsive Design with Bootstrap  - class ="bootstrap"
+2. Responsive Design with Bootstrap  - `class ="bootstrap"`
 
-3. Basic Front End Development Projects - class="FE-projects"
+3. Basic Front End Development Projects - `class="FE-projects"`
 
-4. Object Oriented and Functional Programming- class = "opp-f"
+4. Object Oriented and Functional Programming- `class = "opp-f"`
 
-5. Basic Algorithm Scripting - class = 'basic-alghorithm'
+5. Basic Algorithm Scripting - `class = 'basic-alghorithm'`
 
-6. JSON APIs and Ajax- class ='ajax'
+6. JSON APIs and Ajax - `class ='ajax'`
 
-7. Intermediate Front End Development Projects - class ="inter-FE"
+7. Intermediate Front End Development Projects - `class ="inter-FE"`
 
-8. Intermediate Algorithm Scripting - class = 'inter-alghorithm'
+8. Intermediate Algorithm Scripting - `class = 'inter-alghorithm'`
 
-9. Advanced Algorithm Scripting - class='adv-algorithm'
+9. Advanced Algorithm Scripting - `class='adv-algorithm'`
 
-10. Advanced Front End Development Projects - class='adv-FE-project'
+10. Advanced Front End Development Projects - `class='adv-FE-project'`
 
 *VISUAL DATA*
 
-1. SASS - class ="sass"
+1. SASS - `class ="sass"`
 
-2. REACTJS - class = "react"
+2. REACTJS - `class = "react"`
 
-3. REACT PROJECTS - class = 'react-projects'
+3. REACT PROJECTS - `class = 'react-projects'`
 
-4. D3 - class ='d3'
+4. D3 - `class ='d3'`
 
-5. Data Visuallization Projects - class= 'data-visual-project'
+5. Data Visuallization Projects - `class= 'data-visual-project'`
 
 
 *BACKEND*
 
-1. Automated Testing and Debugging - class='test-debug'
+1. Automated Testing and Debugging - `class='test-debug'`
 
-2. Git - class 'git'
+2. Git - `class 'git'`
 
-3. Node.js and Express.js - class ="nodeExpress"
+3. Node.js and Express.js - `class ="nodeExpress"`
 
-4. Mongo DB - class='MongoDB'
+4. Mongo DB - `class='MongoDB'`
 
-5. API Projects - class= 'web-project'
+5. API Projects - `class= 'web-project'`
 
-6. Dynamic Web Application Projects - class='dynamic-web-app'
+6. Dynamic Web Application Projects - `class='dynamic-web-app'`
 
-7. Nonprofit Projects - class = 'NP-projects'
+7. Nonprofit Projects - `class = 'NP-projects'`
 
-**bio**- your presentation -> REQUIRED
+**bio**- your presentation -> REQUIRED - max 120 words !!!!!
 
 **pic** - path to your image es: assets/images/your-name.png" -> REQUIRED
 
