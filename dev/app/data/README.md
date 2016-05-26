@@ -121,11 +121,11 @@ The first level of filtering highlight which of the major FCC session Campers is
 
 #####*FILETERING FIRST LEVEL:*#####
 
-1. FRONTEND -  `class = "frontend"`
+1. FRONTEND -  `class = "frontend"`  - if you complete all frontend track then `class = "frontend-all"`
 
-2. DATA VISUALIZATION - `class = "data-visual"`
+2. DATA VISUALIZATION - `class = "data-visual"` - if you complete all data visualizzation track then `class = "dv-all"`
 
-3. BACKEND - `class =" backend"`
+3. BACKEND - `class =" backend"` - if you complete all backend track then `class = "backend-all"`
 
 The second level of filtering is pinpoint out exaclty at where point of the FCC you are. You can have more than one and even all the ones you have completed as long as you are willing help people are at that track point.
 
