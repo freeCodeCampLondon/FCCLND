@@ -73,7 +73,7 @@ The first level of filtering highlight which of the major FCC session Campers is
 
 The second level of filtering is pinpoint out exaclty at where point of the FCC you are. You can have more than one and even all the ones you have completed as long as you are willing help people are at that track point.
 
-FILTERING SECOND LEVEL :
+#####*FILTERING SECOND LEVEL :*#####
 
 *FRONTEND*
 
