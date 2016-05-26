@@ -9,9 +9,11 @@ Through classes we are able then to filter campers are working or have completed
 
 Here some tips on how fill fccLndDat.json:
 
-[How to add your data to JSON] 
-[Structure of camper object]
-[Classes you can use]
+[How to add your data to JSON] []
+
+[Structure of camper object][]
+
+[Classes you can use][]
 
 
 
