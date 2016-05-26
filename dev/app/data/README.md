@@ -18,6 +18,10 @@ Here some tips on how fill fccLndDat.json:
 
 
 
+
+
+
+
 ##### How to add your data to JSON
 
 
@@ -76,11 +80,16 @@ Just remember if you are inserting a link to add:
  We suggest your bio to be not longer than 120 words to avoid break layout. 
 
 
+
+
+
+
+
 ####*Structure of camper object:*####
 
 **name** - your name -> REQUIRED
 
-**class** - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED [Classes you can use]
+**class** - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED for references see at [Classes you can use](#classes-you-can-use)
 
 **bio**- your presentation -> REQUIRED - max 120 words !!!!!
 
@@ -101,6 +110,9 @@ Just remember if you are inserting a link to add:
 **challenge** - Last  challenge performed or performing on FCC -> REQUIRED
 
 **date** - date on which your updating status on FCC LND -> REQUIRED
+
+
+
 
 
 ####*Classes you can use:*####
