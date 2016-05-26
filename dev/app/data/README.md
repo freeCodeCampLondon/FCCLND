@@ -1,7 +1,7 @@
 ##### How to add your data to JSON
 
 
-You should duplicate/fill in a JSON block of thi kind:
+You should duplicate/fill in a JSON block of this kind:
 ```
 
           {
@@ -75,25 +75,25 @@ FILTERING SECOND LEVEL :
 
 *FRONTEND*
 
-1. HTML / CSS - class ="html-css"
+1. HTML5 and CSS - class ="html-css"
 
-2. BOOTSTRAP  - class ="bootstrap"
+2. Responsive Design with Bootstrap  - class ="bootstrap"
 
-3. Basic FrontEnd Development Projects - class="FE-projects"
+3. Basic Front End Development Projects - class="FE-projects"
 
-4. Object Orientedand Functional Programming- class = "opp-f"
+4. Object Oriented and Functional Programming- class = "opp-f"
 
 5. Basic Algorithm Scripting - class = 'basic-alghorithm'
 
-6. AJAX - class ='ajax'
+6. JSON APIs and Ajax- class ='ajax'
 
-7. Intermedial FE projects - class ="inter-FE"
+7. Intermediate Front End Development Projects - class ="inter-FE"
 
-8. Intermedial Alghoritm - class = 'inter-alghorithm'
+8. Intermediate Algorithm Scripting - class = 'inter-alghorithm'
 
-9. Advanced Algoritmi - class='adv-algorithm'
+9. Advanced Algorithm Scripting - class='adv-algorithm'
 
-10. Advanced FE projects - class='adv-FE-project'
+10. Advanced Front End Development Projects - class='adv-FE-project'
 
 *VISUAL DATA*
 
@@ -103,24 +103,26 @@ FILTERING SECOND LEVEL :
 
 3. REACT PROJECTS - class = 'react-projects'
 
-4. 3D - class ='3d'
+4. D3 - class ='d3'
 
 5. Data Visuallization Projects - class= 'data-visual-project'
 
 
 *BACKEND*
 
-1. Test / Debugging - class='test-debug'
+1. Automated Testing and Debugging - class='test-debug'
 
 2. Git - class 'git'
 
-3. NodeJS/Express - class ="nodeExpress"
+3. Node.js and Express.js - class ="nodeExpress"
 
 4. Mongo DB - class='MongoDB'
 
-5. ASPI Web Project - class= 'web-project'
+5. API Projects - class= 'web-project'
 
-6. No profit projects - class = 'NP-projects'
+6. Dynamic Web Application Projects - class='dynamic-web-app'
+
+7. Nonprofit Projects - class = 'NP-projects'
 
 **bio**- your presentation -> REQUIRED
 
