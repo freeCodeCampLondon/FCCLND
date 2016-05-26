@@ -41,6 +41,7 @@ If you are the last campers in the JSON don't worry about comma, but should have
 }
 '
 ```
+After you filled the JSON you can verify you have been filled correcly using tools such as [JSON validator](http://jsonlint.com/)
 
 ###Filling in
 
@@ -58,6 +59,8 @@ Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and 
 
 ####*Class you can use:*####
 
+The first level of filtering highlight which of the major FCC session Campers is working or has been working at. Every campers should have one or more. Please insert the session you are working on along with the past one if you are available to help other people with those.
+
 FILETERING FIRST LEVEL:
 
 1. FRONTEND - class = "frontend"
@@ -65,6 +68,8 @@ FILETERING FIRST LEVEL:
 2. DATA VISUALIZATION - class = "data-visual"
 
 3. BACKEND - class =" backend"
+
+The second level of filtering is pinpoint out exaclty at where point of the FCC you are. You can have more than one and even all the ones you have completed as long as you are willing help people are at that track point.
 
 FILTERING SECOND LEVEL :
 
@@ -116,10 +121,6 @@ FILTERING SECOND LEVEL :
 5. ASPI Web Project - class= 'web-project'
 
 6. No profit projects - class = 'NP-projects'
-
-
-You can have more than one class for all FCC session you have been completed .
-
 
 **bio**- your presentation -> REQUIRED
 
