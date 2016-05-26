@@ -93,7 +93,7 @@ Just remember if you are inserting a link to add:
 
 **bio**- your presentation -> REQUIRED - max 120 words !!!!!
 
-**pic** - path to your image es: assets/images/your-name.png" -> REQUIRED
+**pic** - path to your image  -> REQUIRED // due to host space your image need to be host within 3rd party: twitter, github and so on - down to layout need to be a square size suggested  500px by 500px
 
 **email** - youremail@something.com"   -> NOT COMPULSORY
 
@@ -121,11 +121,11 @@ The first level of filtering highlight which of the major FCC session Campers is
 
 #####*FILETERING FIRST LEVEL:*#####
 
-1. FRONTEND -  `class = "frontend"`  - if you complete all frontend track then `class = "frontend-all"`
+1. FRONTEND -  `class = "frontend"`  - if you completed all frontend track then `class = "frontend-all"`
 
-2. DATA VISUALIZATION - `class = "data-visual"` - if you complete all data visualizzation track then `class = "dv-all"`
+2. DATA VISUALIZATION - `class = "data-visual"` - if you completed all data visualizzation track then `class = "dv-all"`
 
-3. BACKEND - `class =" backend"` - if you complete all backend track then `class = "backend-all"`
+3. BACKEND - `class =" backend"` - if you completed all backend track then `class = "backend-all"`
 
 The second level of filtering is pinpoint out exaclty at where point of the FCC you are. You can have more than one and even all the ones you have completed as long as you are willing help people are at that track point.
 
