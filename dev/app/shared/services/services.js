@@ -4,7 +4,7 @@
   // THE NAME OF THE FIRST CAMPERS SHOULD BE "WORKING FROM LOCAL JSON"
   //IN campers.controller.js and main.controller.js YOU HAVE TO UNCOMMENT THE RIGHT BODY CONTROLLER
 
-  /*
+  
     app.factory('getData', function($http) {
     var getData = {
         async: function() {
@@ -20,12 +20,12 @@
     return getData;
     });
 
-  */
+  
 
   // SERVICE FOR AJAX CALL TO FIREBASE
   // COMMENT OUT IF YOU WANT TO WORK WITH LOCAL JSON
   // THE NAME OF THE FIRST CAMPERS SHOULD BE "WORKING FROM FIREBASE"
-  app.factory('getData', ['$firebaseObject', function($firebaseObject) {
+ /* app.factory('getData', ['$firebaseObject', function($firebaseObject) {
     var getData = {
       async: function() {
         var ref = new Firebase("https://glowing-fire-4904.firebaseio.com/FccLond-data/");
@@ -36,6 +36,6 @@
       }
     }
     return getData;
-  }])
+  }])*/
   
 })();

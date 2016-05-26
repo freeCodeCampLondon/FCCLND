@@ -33,7 +33,7 @@
             "web":"http://dannylewis.uk",
             "date":"21/5/16"
          },
-         
+
          {
             "name":"Alex Garulli",
             "class": "frontend backend html-css bootstrap FE-projects opp-f basic-alghorithm ajax inter-FE inter-alghorithm test-debug git nodeExpress",
@@ -49,16 +49,15 @@
             "date":"22/5/16"
          },
          {
-            "name":"Camper 3",
+            "name":"Chris Alexander",
             "class":"frontend",
-            "bio":"Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-            "pic":"assets/images/camper.png",
-            "email":"alex.garulli@gmail.com",
-            "tw":"http://google.com",
-            "lk":"http://google.com",
-            "web":"http://google.com",
-            "challenge":"Pig Latin",
-            "date":"24/4/16"
+            "bio":"Hi I'm Chris, I have been learning with Free Code Camp since April 2015 and I hope to find a programming job by the end of 2016.",
+            "pic":"https://avatars1.githubusercontent.com/u/2815297?v=3&s=460",
+            "tw":"https://twitter.com/ShutoTakahiro",
+            "web":"https://chrisalexander.me.uk",
+            "fcc":"http://www.freecodecamp.com/chris-alexander",
+            "challenge":"Weather App",
+            "date":"26/05/16"
          },
          {
             "name":"Camper 4",
