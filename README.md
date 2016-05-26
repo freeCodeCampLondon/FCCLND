@@ -25,6 +25,8 @@ Start developing with live-reload:
 
 `gulp`
 
+###[How to Contributing ](CONTRIBUTING.md)
+
 ### TECH USED SO FAR
 
 * [Gulp](http://gulpjs.com/)
