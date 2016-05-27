@@ -6,6 +6,7 @@
 5. MAIN PAGE
 6. CAMPERS PAGE
 7. MEDIA QUERY
+8. DEBUGER HELP
 */
 
 /*
@@ -303,4 +304,13 @@ div[class^='-filter'],div[class*='-filter']{
     .overlay-content{
       font-size: 1em;
     }
+}
+/*
+=================================================
+8. DEBUGER HELP
+=================================================
+*/
+.debug{
+  color: red;
+  position: relative;
 }
