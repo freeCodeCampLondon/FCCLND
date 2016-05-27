@@ -1,42 +1,48 @@
-<div id="items" ng-controller="campersC">
-  <h2 class="debug">{{debug}}</h2>
-  <div class="col-xs-12 filter">
-    <button data-filter="isotope-item" ng-click="filterAll(); showFE=false; showDV=false; showBK=false ">ALL</button>
-    <button data-filter="frontend" ng-click="filterFE(); showFE=true;  showDV=false; showBK=false ">FRONTEND</button>
-    <button data-filter="data-visual" ng-click="filterDataVisual(); showDV=true;  showFE=false; showBK=false">DATA VISUALIZATION</button>
-    <button data-filter="backend" ng-click="filterBK(); showBK=true; showFE=false; showDV=false">BACKEND</button>
-    <div class="frontend-filter " ng-show="showFE">
-      <button data-filter="frontend" ng-click="filterHtml()">HTML/CSS</button>
-      <button data-filter="frontend" ng-click="filterBootstrap()">Bootsrap</button>
-      <button data-filter="frontend" ng-click="filterProjFE()">FE projects</button>
-      <button data-filter="frontend" ng-click="filterOPP()">OPP vs functional</button>
-      <button data-filter="frontend" ng-click="filterBasicAlgho">Basic Algorithtm</button>
-      <button data-filter="frontend" ng-click="filterAjax()">Ajax</button>
-      <button data-filter="frontend" ng-click="filterInterFE()">Inter FE</button>
-      <button data-filter="frontend" ng-click="filterInterAlg()">Inter Algorithtm</button>
-      <button data-filter="frontend" ng-click="filterAdvAlg()">Adv Algorithtm</button>
-      <button data-filter="frontend" ng-click="filterFEProj()">Adv FE projects</button>
+<div class="jumbotron clearfix">
+  <div id="items" ng-controller="campersC">
+      <h2 class="debug">{{debug}}</h2>
+      <div class="row">
+        <div class="col-xs-12 filter">
+          <button data-filter="isotope-item" ng-click="filterAll(); showFE=false; showDV=false; showBK=false ">ALL</button>
+          <button data-filter="frontend" ng-click="filterFE(); showFE=true;  showDV=false; showBK=false ">FRONTEND</button>
+          <button data-filter="data-visual" ng-click="filterDataVisual(); showDV=true;  showFE=false; showBK=false">DATA VISUALIZATION</button>
+          <button data-filter="backend" ng-click="filterBK(); showBK=true; showFE=false; showDV=false">BACKEND</button>
+          <div class="frontend-filter " ng-show="showFE">
+            <button data-filter="frontend" ng-click="filterHtml()">HTML/CSS</button>
+            <button data-filter="frontend" ng-click="filterBootstrap()">Bootsrap</button>
+            <button data-filter="frontend" ng-click="filterProjFE()">FE projects</button>
+            <button data-filter="frontend" ng-click="filterOPP()">OPP vs functional</button>
+            <button data-filter="frontend" ng-click="filterBasicAlgho">Basic Algorithtm</button>
+            <button data-filter="frontend" ng-click="filterAjax()">Ajax</button>
+            <button data-filter="frontend" ng-click="filterInterFE()">Inter FE</button>
+            <button data-filter="frontend" ng-click="filterInterAlg()">Inter Algorithtm</button>
+            <button data-filter="frontend" ng-click="filterAdvAlg()">Adv Algorithtm</button>
+            <button data-filter="frontend" ng-click="filterFEProj()">Adv FE projects</button>
 
-    </div>
-    <div class="datavisual-filter" ng-show="showDV">
-      <button data-filter="data-visual" ng-click="filterSass()">SASS</button>
-      <button data-filter="data-visual" ng-click="filterReact()">React</button>
-      <button data-filter="data-visual" ng-click="filterReactProj()">React projects</button>
-      <button data-filter="data-visual" ng-click="filterD3()">D3</button>
-      <button data-filter="data-visual" ng-click="filterDVProj()">DV Projects</button>
-    </div>
-    <div class="backend-filter" ng-show="showBK">
-      <button data-filter="backend" ng-click="filterTestD()">Test/Debug</button>
-      <button data-filter="backend" ng-click="filterNodeEx()">Node/Express</button>
-      <button data-filter="backend" ng-click="filterGit()">Git</button>
-      <button data-filter="backend" ng-click="filterMongoDB()">MongoDB</button>
-      <button data-filter="backend" ng-click="filterWebProj()">Web Projects</button>
-      <button data-filter="backend" ng-click="filterNBProj()">No-profit Projects</button>
-    </div>
-  </div>
 
-  <div class="jumbotron clearfix">
-    <section class="container" data-iso-repeat="collection">
 
-    </section>
-  </div>
+          </div>
+          <div class="datavisual-filter" ng-show="showDV">
+            <button data-filter="data-visual" ng-click="filterSass()">SASS</button>
+            <button data-filter="data-visual" ng-click="filterReact()">React</button>
+            <button data-filter="data-visual" ng-click="filterReactProj()">React projects</button>
+            <button data-filter="data-visual" ng-click="filterD3()">D3</button>
+            <button data-filter="data-visual" ng-click="filterDVProj()">DV Projects</button>
+          </div>
+          <div class="backend-filter" ng-show="showBK">
+            <button data-filter="backend" ng-click="filterTestD()">Test/Debug</button>
+            <button data-filter="backend" ng-click="filterNodeEx()">Node/Express</button>
+            <button data-filter="backend" ng-click="filterGit()">Git</button>
+            <button data-filter="backend" ng-click="filterMongoDB()">MongoDB</button>
+            <button data-filter="backend" ng-click="filterWebProj()">Web Projects</button>
+            <button data-filter="backend" ng-click="filterNBProj()">No-profit Projects</button>
+          </div>
+        </div>
+     </div>   
+
+     <div class="row">
+      <section  data-iso-repeat="collection">
+
+      </section>
+     </div> 
+</div>

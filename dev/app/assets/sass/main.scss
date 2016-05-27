@@ -31,7 +31,9 @@ body{
 		color: $darkGreen;
 	}
 }
-
+.row {
+  margin: 0;
+}
 /*
 =================================================
 3. HAEADER AND NAV
@@ -68,9 +70,12 @@ header{
 	border: none;
 }
 
-.container 	div{
+#wrapper {
+  padding: 0 20px;
+  > div{
 		color:#000000;
-	}
+   }
+}
 
 img{
 	width: 100%;
@@ -83,16 +88,12 @@ img{
 */
 
 .jumbotron{
+  padding: 20px;
   border: none;
 
   p{
      font-size: 1em;
      font-weight: normal;
-  }
-
-  .container{
-     width: 100%;
-     border: none;
   }
 }
 
@@ -101,6 +102,9 @@ img{
 5. MAIN PAGE
 =================================================
 */
+#main{
+  padding: 30px 20px;
+}
 
 address {
 	margin: 5px 0;
@@ -118,22 +122,8 @@ address {
     margin: 0 auto;
 }
 
-section {
-    margin: 0 auto;
-    padding: 8px 0 0 8px;
-    border: 1px solid #ddd;
-  }
-
-section article {
-    margin: 0 8px 8px 0;
-    padding: 4px;
-    border: 1px solid #ddd;
-  }
-
-
 .isotope-item {
-  width: 20%;
-  margin: 1%;
+  color: $white;
   border: none;
   img{
     width:100%;
@@ -187,17 +177,14 @@ section article {
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
     ul{
-    position: absolute;
-    bottom: 30px;
-    color: #fff;
-    text-align: center;
-    /* margin: 0 auto; */
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    /* float: left; */
-    left: 0;
-
+      position: absolute;
+      bottom: 30px;
+      color: #fff;
+      text-align: center;
+      width: 95%;
+      padding: 0;
+      margin: 0;
+      left: 0;
     }
 }
 
@@ -225,11 +212,11 @@ section article {
 .isotope-item .overlay {
     border-bottom: 100px solid $darkGreen;;
     border-left: 100px solid transparent;
-    bottom: 5px;
+    bottom: 1%;
     height: 0;
     opacity: .95;
     position: absolute;
-    right: -2px;
+    right: 6px;
     text-indent: -9999px;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
@@ -239,9 +226,8 @@ section article {
 }
 
 .isotope-item:hover .overlay {
-    width: 100%;
-    height: 96%;
-    bottom: 8px;
+    width: 95%;
+    height: 98%;
     background:$darkGreen;
     transition: all 0.5s ease-out;
 
@@ -278,9 +264,9 @@ div[class^='-filter'],div[class*='-filter']{
 
 @media screen and (max-width: 1500px) {
     .isotope-item {
-      width: 30%;
       border: none;
     }
+
     .overlay-content{
       font-size: 0.9em;
     }
@@ -288,19 +274,12 @@ div[class^='-filter'],div[class*='-filter']{
 
 /* Responsive: Portrait tablets and up */
 @media screen and (max-width: 999px) {
-    .isotope-item {
-      width: 40%;
-    }
     .overlay-content{
       font-size: 0.8em;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .isotope-item {
-      width: 100%;
-    }
-
     .overlay-content{
       font-size: 1em;
     }
