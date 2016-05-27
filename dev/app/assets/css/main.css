@@ -6,6 +6,7 @@
 5. MAIN PAGE
 6. CAMPERS PAGE
 7. MEDIA QUERY
+8. DEBUGER HELP
 */
 /*
 =================================================
@@ -24,6 +25,9 @@ body {
   color: #ffffff; }
   body a, body a:visited {
     color: #006400; }
+
+.row {
+  margin: 0; }
 
 /*
 =================================================
@@ -224,3 +228,12 @@ div[class^='-filter'], div[class*='-filter'] {
 @media screen and (max-width: 700px) {
   .overlay-content {
     font-size: 1em; } }
+
+/*
+=================================================
+8. DEBUGER HELP
+=================================================
+*/
+.debug {
+  color: red;
+  position: relative; }
