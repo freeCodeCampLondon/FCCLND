@@ -34,7 +34,7 @@ app.directive('isoRepeat', function($timeout, $window) {
         // FIRST LEVEL
       $scope.filterFE = function() {
         element.isotope({
-          filter: '.frontend'
+          filter: '.frontend, .frontend-all'
         });
       };
       $scope.filterAll = function() {
@@ -44,67 +44,67 @@ app.directive('isoRepeat', function($timeout, $window) {
       };
       $scope.filterDataVisual = function() {
         element.isotope({
-          filter: '.data-visual'
+          filter: '.data-visual, .dv-all'
         })
       }
       $scope.filterBK = function() {
           element.isotope({
-            filter: '.backend'
+            filter: '.backend .backend-all'
           })
         }
         // SECOND LEVEL FE
       $scope.filterHtml = function() {
         element.isotope({
-          filter: '.html-css'
+          filter: '.html-css, .frontend-all'
         })
       }
 
       $scope.filterBootstrap = function() {
         element.isotope({
-          filter: ' .bootstrap'
+          filter: ' .bootstrap, .frontend-all'
         })
       }
       $scope.filterProjFE = function() {
         element.isotope({
-          filter: ' .FE-projects'
+          filter: ' .FE-projects, .frontend-all'
         })
       }
 
       $scope.filterOPP = function() {
         element.isotope({
-          filter: ' .opp-f'
+          filter: ' .opp-f, .frontend-all'
         })
       }
       $scope.filterBasicAlgho = function() {
         element.isotope({
-          filter: ' .basic-alghorithm'
+          filter: ' .basic-alghorithm, .frontend-all'
         })
       }
 
       $scope.filterAjax = function() {
         element.isotope({
-          filter: '.ajax'
+          filter: '.ajax, .frontend-all'
         })
       }
       $scope.filterInterFE = function() {
         element.isotope({
-          filter: ' .inter-FE'
+          filter: ' .inter-FE, .frontend-all'
         })
       }
       $scope.filterInterAlg = function() {
         element.isotope({
-          filter: ' .inter-alghorithm'
+          filter: ' .inter-alghorithm, .frontend-all'
         })
       }
       $scope.filterAdvAlg = function() {
         element.isotope({
-          filter: 'adv-algorithm'
+          filter: '.adv-algorithm, .frontend-all'
         })
       }
 
       $scope.filterAdvFEProj = function() {
         element.isotope({
-          filter: 'adv-FE-projects'
+          filter: '.adv-FE-projects, frontend-all'
         })
       }
 
@@ -113,67 +113,67 @@ app.directive('isoRepeat', function($timeout, $window) {
       //DATA VISUAL
       $scope.filterSass = function() {
         element.isotope({
-          filter: ' .sass'
+          filter: ' .sass, .dv-all'
         })
       }
 
       $scope.filterReact = function() {
         element.isotope({
-          filter: '.react'
+          filter: '.react,  .dv-all'
         })
       }
 
       $scope.filterReactProj = function() {
         element.isotope({
-          filter: '.react-projects'
+          filter: '.react-projects,  .dv-all'
         })
       }
       $scope.filterD3 = function() {
         element.isotope({
-          filter: '.d3'
+          filter: '.d3,  .dv-all'
         })
       }
 
       $scope.filterDVProj = function() {
         element.isotope({
-          filter: '.data-visual-projects'
+          filter: '.data-visual-projects,  .dv-all'
         })
       }
 
       //BACKEND
       $scope.filterTestD = function() {
         element.isotope({
-          filter: '.test-debug'
+          filter: '.test-debug, .backend-all'
         })
       }
 
       $scope.filterNodeEx = function() {
         element.isotope({
-          filter: '.nodeExpress'
+          filter: '.nodeExpress,  .backend-all'
         })
       }
 
       $scope.filterGit = function() {
         element.isotope({
-          filter: '.git'
+          filter: '.git,  .backend-all'
         })
       }
 
       $scope.filterMongoDB = function() {
         element.isotope({
-          filter: '.MongoDB'
+          filter: '.MongoDB,  .backend-all'
         })
       }
 
       $scope.filterWebProj = function() {
         element.isotope({
-          filter: '.web-project'
+          filter: '.web-project,  .backend-all'
         })
       }
 
       $scope.filterNBProj = function() {
         element.isotope({
-          filter: '.NP-projects'
+          filter: '.NP-projects,  .backend-all'
         })
       }
     }
