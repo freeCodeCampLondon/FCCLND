@@ -18,15 +18,19 @@ app.directive('isoRepeat', function($timeout, $window) {
       element.isotope(options);
       $scope.element = element;
 
+
       $scope.$watch('campersData', function(newVal, oldVal) {
         $timeout(function() {
+          imagesLoaded( document.querySelector('#campers-container'), function( instance ) {
           element.isotope('reloadItems').isotope();
           element.isotope('shuffle'); //THAT S HAPPEN WHEN LOAD PAGE
+          });
         });
       }, true);
 
       angular.element($window).bind('resize', function(){
          width = $window.innerWidth;
+         element.isotope('reloadItems').isotope();
          element.isotope('shuffle'); //THAT S HAPPEN on RESIZE
        });
       
