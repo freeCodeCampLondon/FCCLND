@@ -18,7 +18,7 @@ dist.init({
 
 dev.init({
     server: {
-        baseDir: "dev/app", // START SERVER IN OUR DEVELOPMENT ENVIROMENT
+        baseDir: "dev/app", // START SERVER IN DIST ENVIROMENT TO TEST THAT AS WELL
         routes: {
                 "/bower_components": "bower_components" // WATCH ALSO BOWER DIR OTHERWISE EXTERNAL TO SERVER
                 }
