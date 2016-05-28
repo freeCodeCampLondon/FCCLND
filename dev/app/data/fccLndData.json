@@ -20,9 +20,10 @@
       "date": "24/4/16"
     }, {
       "name": "Danny Lewis",
-      "class": "web-project",
+      "class": "frontend-all backend test-debug git nodeExpress MongoDB web-project dynamic-web-app",
       "bio": "Hi I'm Danny, I've been programming for a few years, recently started focussing on Javascipt",
-      "pic": "assets/images/danny-lewis.jpg",
+      "pic": "http://i.imgur.com/7YAMPpk.jpg",
+      "email": "me@dannylewis.uk",
       "fcc": "https://www.freecodecamp.com/silverwedding",
       "challenge": "Build a Voting App",
       "web": "http://dannylewis.uk",
