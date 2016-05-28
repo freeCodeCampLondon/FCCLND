@@ -1,19 +1,12 @@
 (function() {
   'use strict';
-  app.controller('mainC', mainC)
+  app.controller('mainC', mainC);
 
   function mainC($scope, getData) {
-    if (ENV_isFirebaseOff){
-      getData.async().then(function(data) {
-        $scope.debug = "Working from LOCAL JSON";
-        $scope.mainData = data["FccLond-data"]["main"][0];
-       });
-    }else{
-     getData.async().then(function(data) {
-      $scope.debug = "Working from FIREBASE";
+    getData.async().then(function(data) {
+      $scope.debug = (localData) ? "Working from LOCAL JSON" : "Working from FIREBASE";
       $scope.mainData = data.main[0];
-      })
-   }
+    });
   }
 
 })();
