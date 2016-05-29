@@ -38,7 +38,7 @@ An example of how to fill in your Camper info JSON. You should copy this and fil
             "email":"something@gmail.com",
             "fcc":"http://freecodecamp.com/camper",
             "tw":"http://twitter.com/camper",
-            "lk":"http://linedin.com/camper",
+            "lk":"https://uk.linkedin.com/in/camper",
             "web":"http://my-portfolio.com",
             "fb":"http://facebook.com/camper",
             "challenge":"Pig Latin",
@@ -79,7 +79,7 @@ Just remember if you are inserting a link to add:
  ```
  To make sure that the user is staying on the site and the link is opened in a new tab.
  
- Make sure your bio is fewer than 120 words to avoid breaking the layout.
+ Make sure your bio is fewer than 250 characters to avoid breaking the layout.
 
 
 
@@ -93,7 +93,7 @@ Just remember if you are inserting a link to add:
 
 **class** - list of all classes corrisponding to the FCC sessions you have completed, these are used for the filter on the camper page so the user can select all campers at a particular point -> REQUIRED for references see at [Classes you can use](#classes-you-can-use)
 
-**bio**- your presentation -> REQUIRED - max 120 words !!!!!
+**bio**- your presentation -> REQUIRED - max 250 characters !!!!!
 
 **pic** - path to your image  -> REQUIRED // due to space limits your image needs to be hosted on a 3rd party e.g. twitter, github, imgur - to fit layout image need to be a square and around 500px
 
@@ -121,7 +121,7 @@ Just remember if you are inserting a link to add:
 
 The first level of filtering highlights which of the main FCC session campers are on or have been working on. Every camper should have at least one of the main classes. Please add the exercise/project you are working on, along with any previous ones that you are available to help other people with.
 
-#####*FILETERING FIRST LEVEL:*#####
+#####*FILTERING FIRST LEVEL:*#####
 
 1. FRONTEND -  `class = "frontend"`  - if you completed all frontend track then use `class = "frontend-all"` instead.
 
