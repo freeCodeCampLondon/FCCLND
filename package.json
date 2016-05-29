@@ -20,12 +20,26 @@
   },
   "dependencies": {
     "browser-sync": "^2.12.7",
+    "dev": "^0.1.3",
     "gulp": "^3.9.1",
     "gulp-inject": "^4.0.0",
     "gulp-jshint": "^2.0.1",
-    "jshint": "^2.9.2",
     "gulp-sass": "^2.3.1",
+    "jshint": "^2.9.2",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-html-reporter": "^0.2.0",
+    "karma-phantomjs-launcher": "^1.0.0",
     "require-dir": "^0.3.0",
     "wiredep": "^4.0.0"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-html-reporter": "^0.2.7",
+    "karma-jasmine-html-reporter": "^0.2.0",
+    "phantomjs-prebuilt": "^2.1.7"
   }
 }

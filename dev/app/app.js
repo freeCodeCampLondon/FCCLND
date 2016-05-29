@@ -12,5 +12,6 @@
 var app = angular.module('fccLnd', [
   'firebase',
   'ngRoute',
-  'ngSanitize'
+  'ngSanitize',
+  'ngMockE2E'
 ])
