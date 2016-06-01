@@ -13,4 +13,4 @@ var app = angular.module('fccLnd', [
   'firebase',
   'ngRoute',
   'ngSanitize'
-])
+]);

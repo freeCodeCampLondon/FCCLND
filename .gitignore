@@ -14,7 +14,9 @@ Thumbs.db
 # Dependency Directories
 node_modules
 bower_components
-
+dev/app/assets/css
+dev/app/config-app.js
+dist
 # Logs
 logs
 *.log*

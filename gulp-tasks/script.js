@@ -1,11 +1,11 @@
 // include gulp
 var gulp = require('gulp');
-
-// include plug-ins
-var jshint = require('gulp-jshint');
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish')
 
 // JS hint task
 gulp.task('script', function() {
   gulp.src('dev/app/**/**/*.js')
-    .pipe(jshint())
+     .pipe(jshint())
+  	 .pipe(jshint.reporter(stylish));
 });
