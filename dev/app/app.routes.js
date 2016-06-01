@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
   /**
    * @ngdoc overview
@@ -8,7 +8,7 @@
    *
    * Main module of the application.
    */
-  angular.module('fccLnd').config(function($routeProvider) {
+  angular.module('fccLnd').config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'main/main.html',

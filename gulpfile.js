@@ -5,6 +5,4 @@ var requireDir = require('require-dir');
 requireDir('./gulp-tasks');  // SET GULP DIRECTORY
 
 // CALLING ALL TASKS WE NEED FOR DEVELOPMENT
-gulp.task('default', [ 'inject', 'script', 'build', 'server'], function () {
-
-});
+gulp.task('default', ['inject', 'script', 'build', 'server']);
