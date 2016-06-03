@@ -24,5 +24,10 @@
     "angularfire": "^1.2.0",
     "isotope": "1.5.21",
     "imagesloaded": "^4.1.0"
+  },
+  "overrides": {
+    "isotope": {
+      "main": ["js/jquery-1.7.1.min.js", "jquery.isotope.js"]
+    }
   }
 }
