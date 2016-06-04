@@ -1,15 +1,18 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-// TODO: var autoprefixer = require('gulp-autoprefixer');
-// TODO: var minifyCss = require('gulp-minify-css');
+var autoprefixer = require('gulp-autoprefixer');
+var del = require('del');
 
-// THIS TASK COMPILES SASS INTO THE DEV CSS DIRECTORY AND LOGS ERRORS
+/**
+ * Compile sass to css held in .tmp/
+ */
 
 gulp.task('sass', function () {
-  gulp.src('dev/app/assets/sass/main.scss')
+  // Clean complied CSS
+  del('./.tmp/**/*.css');
+  // Compile Sass
+  return gulp.src('dev/app/assets/sass/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dev/app/assets/css'));
-  // .pipe(autoprefixer())
-  // .pipe(minifyCss())
-  // .pipe(gulp.dest('dist'));
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./.tmp'));
 });
