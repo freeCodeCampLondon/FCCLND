@@ -22,12 +22,14 @@
     "angular-sanitize": "^1.5.5",
     "firebase": "^2.4.2",
     "angularfire": "^1.2.0",
-    "isotope": "1.5.21",
-    "imagesloaded": "^4.1.0"
+    "imagesloaded": "^4.1.0",
+    "isotope": "^1.5.21"
   },
   "overrides": {
-    "isotope": {
-      "main": ["js/jquery-1.7.1.min.js", "jquery.isotope.js"]
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
     }
   }
 }

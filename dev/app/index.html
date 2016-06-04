@@ -6,22 +6,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>
-    FCC LND app
-  </title>
+  <title>FCC London Campers</title>
+
+  <!-- build:css assets/css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/bootstrap-css-only/css/bootstrap.css" />
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
 
   <!-- build:css assets/css/main.css -->
-
-  <!-- bower:css -->
-  <link rel="stylesheet" href="../../bower_components/bootstrap-css-only/css/bootstrap.css" />
-  <!-- endbower -->
-  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.css" />
   <!-- inject:css -->
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/.tmp/main.css">
   <!-- endinject -->
-
-
   <!-- endbuild -->
+
 </head>
 
 <body ng-app="fccLnd">
@@ -47,41 +46,38 @@
   <footer>
 
   </footer>
-  <!-- build:js scripts/main.js -->
- <script src="config-app.js"></script>
-  <!-- I COULDN'T MANAGE TO INJECT THE FOLLOWING FILES WITH GULP DESPITE OVERWRITES -->
-  <!-- THESE JS NEED TO BE CALLED IN THE HEADER FOR DOM MANIPULATION   -->
-  <script src="../../bower_components/isotope/js/jquery-1.7.1.min.js"></script>
-  <script src="../../bower_components/isotope/jquery.isotope.js"></script>
+  <!-- build:js scripts/vendor.js -->
+  <script src="/bower_components/isotope/js/jquery-1.7.1.min.js"></script>
+  <script src="/bower_components/isotope/jquery.isotope.js"></script>
 
   <!-- bower:js-->
-  <script src="../../bower_components/angular/angular.js"></script>
-  <script src="../../bower_components/angular-route/angular-route.js"></script>
-  <script src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
-  <script src="../../bower_components/firebase/firebase.js"></script>
-  <script src="../../bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="/bower_components/firebase/firebase.js"></script>
+  <script src="/bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="/bower_components/ev-emitter/ev-emitter.js"></script>
+  <script src="/bower_components/imagesloaded/imagesloaded.js"></script>
   <!-- endbower -->
+  <!-- endbuild -->
 
+  <!-- build:remove -->
+  <script>
+    // Change this to switch between local JSON and Firebase
+    var localData = true;
+  </script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/app.js -->
   <!-- inject:js -->
-
   <script src="/app.js"></script>
-
   <script src="/app.routes.js"></script>
-
-  <script src="/config-app.js"></script>
-
   <script src="/campers/campers.controller.js"></script>
-
   <script src="/campers/campers.directive.js"></script>
-
   <script src="/main/main.controller.js"></script>
-
   <script src="/shared/controller.js"></script>
-
   <script src="/shared/services/services.js"></script>
-
   <!-- endinject -->
-
   <!-- endbuild -->
 </body>
 
