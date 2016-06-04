@@ -1,6 +1,6 @@
 var gulp = require('gulp');
-var inject = require('gulp-inject'); // GULP-INJECT IS USED FOR FILES WE DEVELOP
-var wiredep = require('wiredep').stream; // WIREDEP USE TO INJECT DEPENDENCIES SUCH AS BOWWER FILES PACKAGE
+var inject = require('gulp-inject'); // Injects our front-end JS and CSS files
+var wiredep = require('wiredep').stream; // Injects bower front-end dependencies
 
 /**
  * Inject front-end dev dependencies into index.html
@@ -8,8 +8,8 @@ var wiredep = require('wiredep').stream; // WIREDEP USE TO INJECT DEPENDENCIES S
 
 gulp.task('inject', ['sass'], function () {
   var target = 'dev/app/index.html';
-  // OUR CSS / JS FILES
-  var sources = gulp.src(['dev/app/**/**/*.js', '.tmp/**/*.css'], {
+  // Our JS and CSS files
+  var sources = gulp.src(['dev/app/**/*.js', '.tmp/**/*.css'], {
     read: false
   });
   // It's not necessary to read the files (will speed up things), we're only after their paths:
