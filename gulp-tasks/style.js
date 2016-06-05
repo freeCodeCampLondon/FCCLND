@@ -8,9 +8,9 @@ var del = require('del');
  */
 
 gulp.task('sass', function () {
-  // Clean complied CSS
+  // Remove pre-complied css
   del('./.tmp/**/*.css');
-  // Compile Sass
+  // Compile sass
   return gulp.src('dev/app/assets/sass/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
