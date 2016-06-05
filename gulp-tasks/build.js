@@ -48,7 +48,7 @@ gulp.task('optimise', ['inject'], function () {
     .pipe(gulpif('*.html', htmlmin({
       collapseWhitespace: true,
       preserveLineBreaks: true
-     })))
+    })))
     .pipe(gulp.dest('./dist/app'));
 });
 
