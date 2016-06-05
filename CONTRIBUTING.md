@@ -35,7 +35,7 @@ We welcome and encourage pull requests from members of our Free Code Camp study 
 
 4.  Add the main repository as a remote branch so that you can rebase later
 
-    `git remote add upstream https://github.com/artitudinale1/FCCND.git`
+    `git remote add upstream https://github.com/artitudinale1/FCCLND.git`
 
 
 ## Rebasing from Upstream
