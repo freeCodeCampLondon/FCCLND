@@ -7,13 +7,12 @@ var wiredep = require('wiredep').stream; // Injects bower front-end dependencies
  */
 
 gulp.task('inject', ['sass'], function () {
-  var target = 'dev/app/index.html';
   // Our JS and CSS files
   var sources = gulp.src(['dev/app/**/*.js', '.tmp/**/*.css'], {
+    /* This speeds-up processing */
     read: false
   });
-  // It's not necessary to read the files (will speed up things), we're only after their paths:
-  return gulp.src(target)
+  return gulp.src('dev/app/index.html')
     .pipe(wiredep({
       ignorePath: '../..'
     })) // inject bower dependencies
