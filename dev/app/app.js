@@ -1,6 +1,11 @@
 'use strict';
 
 /**
+ * Change to switch between local JSON and firebase
+ */
+var localData = true;
+
+/**
  * @ngdoc overview
  * @name freeCodeLondonersCampApp
  * @description

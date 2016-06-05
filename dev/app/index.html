@@ -8,14 +8,13 @@
 
   <title>FCC London Campers</title>
 
-  <!-- build:css assets/css/vendor.css -->
+  <!-- build:css(.) assets/css/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/bootstrap-css-only/css/bootstrap.css" />
   <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
-
-  <!-- build:css assets/css/main.css -->
+  <!-- build:css(.) assets/css/main.css -->
   <!-- inject:css -->
   <link rel="stylesheet" href="/.tmp/main.css">
   <!-- endinject -->
@@ -33,8 +32,8 @@
       <small>London UK Campers</small>
     </div>
     <ul class="nav nav-tabs" ng-controller="HeaderController">
-      <li role="presentation" ng-class="{ active: isActive('/')}"><a href="/#/">Home</a></li>
-      <li role="presentation" ng-class="{ active: isActive('/campers')}"><a href="#/campers/">Campers</a></li>
+      <li role="presentation" ng-class="{ active: isActive('/') }"><a href="/#/">Home</a></li>
+      <li role="presentation" ng-class="{ active: isActive('/campers') }"><a href="#/campers/">Campers</a></li>
     </ul>
   </header>
 
@@ -46,10 +45,9 @@
   <footer>
 
   </footer>
-  <!-- build:js scripts/vendor.js -->
+  <!-- build:js(.) scripts/vendor.js -->
   <script src="/bower_components/isotope/js/jquery-1.7.1.min.js"></script>
   <script src="/bower_components/isotope/jquery.isotope.js"></script>
-
   <!-- bower:js-->
   <script src="/bower_components/angular/angular.js"></script>
   <script src="/bower_components/angular-route/angular-route.js"></script>
@@ -60,14 +58,6 @@
   <script src="/bower_components/imagesloaded/imagesloaded.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
-
-  <!-- build:remove -->
-  <script>
-    // Change this to switch between local JSON and Firebase
-    var localData = true;
-  </script>
-  <!-- endbuild -->
-
   <!-- build:js scripts/app.js -->
   <!-- inject:js -->
   <script src="/app.js"></script>
