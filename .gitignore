@@ -28,3 +28,4 @@ logs
 # Compile directory
 dist
 public
+.publish

@@ -1,8 +1,9 @@
-// CALL GULP TO CREATE TASKS FOR DEVELOPMENT
-var gulp = require('gulp');
-// REQUIRE-DIR PERMIT YOU DIVIDE GULP TASKS ACROSS MULTIPLE FILES
-var requireDir = require('require-dir');
-requireDir('./gulp-tasks');  // SET GULP DIRECTORY
+/**
+ * Gulp is our development taskrunner
+ */
 
-// CALLING ALL TASKS WE NEED FOR DEVELOPMENT
-gulp.task('default', ['inject', 'script', 'build', 'server']);
+var gulp = require('gulp');
+require('require-dir')('./gulp-tasks'); // Modularised Gulp Tasks
+
+/* Default Task */
+gulp.task('default', ['serve-dev']);
