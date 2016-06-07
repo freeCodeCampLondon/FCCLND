@@ -4,9 +4,9 @@
     "alex <alex.garulli@kurtgeiger.com>"
   ],
   "description": "Portal for FreeCodeCamp London Campers",
-  "main": "app.js",
+  "main": "./dev/app/app.js",
   "license": "MIT",
-  "homepage": "app/index.html",
+  "homepage": "./dev/app/index.html",
   "ignore": [
     "**/.*",
     "node_modules",
