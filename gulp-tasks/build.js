@@ -45,10 +45,10 @@ gulp.task('optimise', ['inject'], function () {
     .pipe(gulpif('*.css', cleanCss())) // Minify CSS
     .pipe(gulpif('*.css', rev()))
     .pipe(revReplace())
-    .pipe(gulpif('*.html', htmlmin({
-      collapseWhitespace: true,
-      preserveLineBreaks: true
-    })))
+    // .pipe(gulpif('*.html', htmlmin({
+    //   collapseWhitespace: true,
+    //   preserveLineBreaks: true
+    // })))
     .pipe(gulp.dest('./dist/app'));
 });
 
