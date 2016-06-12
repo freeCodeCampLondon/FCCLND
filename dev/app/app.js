@@ -1,5 +1,8 @@
 'use strict';
 
+require('../../bower_components/isotope/js/jquery-1.7.1.min.js');
+require('../../bower_components/isotope/jquery.isotope.js');
+
 var angular = require('angular');
 require('angular-route');
 require('angular-sanitize');
@@ -13,14 +16,12 @@ require('angularfire');
  * Main module of the application.
  */
 
-var app = angular.module('fccLnd', [
-  'firebase',
-  'ngRoute',
-  'ngSanitize'
-]);
+var dataSource = (require('./app.config')) ? require('./shared/services/local') : require('./shared/services/firebase');
 
-app.config(require('./app.routes'))
-  .controller('mainC', require('./main/main.controller'))
-  .controller('campersC', require('./campers/campers.controller'))
-  .directive('isoRepeat', require('./campers/campers.directive'))
-  .controller('HeaderController', require('./shared/controller'));
+angular.module('fccLnd', ['firebase', 'ngRoute','ngSanitize'])
+  .config(['$routeProvider', require('./app.routes')])
+  .factory('getData', dataSource)
+  .controller('mainC', ['$scope', 'getData', require('./main/main.controller')])
+  .controller('campersC', ['$scope', 'getData', require('./campers/campers.controller')])
+  .directive('isoRepeat', ['$timeout', '$window', require('./campers/campers.directive')])
+  .controller('HeaderController', ['$scope', '$location', require('./shared/controller')]);

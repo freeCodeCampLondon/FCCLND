@@ -34,10 +34,10 @@ gulp.task('copy:data', function () {
 /**
  * Concatenate front-end dependencies and minify
  */
-gulp.task('optimise', ['inject'], function () {
+gulp.task('optimise', ['browserify', 'inject'], function () {
   del('./dist/app/**/*.{html,js,css}');
   return gulp.src('./dev/app/**/*.html')
-    .pipe(useref())
+    .pipe(useref({ searchPath: '.' }))
     /* This is to ensure that we work from Firebase in production */
     .pipe(gulpif('*.js', replace('var localData = true;', 'var localData = false;')))
     .pipe(gulpif('*.js', uglify({ mangle: false }))) // Minify JavaScript

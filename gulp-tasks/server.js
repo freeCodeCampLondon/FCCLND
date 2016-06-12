@@ -6,7 +6,7 @@ var dev = browserSync.create('dev');
 /**
  * Serve development version of app
  */
-gulp.task('serve-dev', ['inject', 'lint'], function () {
+gulp.task('serve-dev', ['inject', 'lint', 'browserify'], function () {
   return (function () { /* Temporary fix to stop this task from running when not called */
     /* Serve development files with browserSync */
     dev.init({
@@ -24,7 +24,7 @@ gulp.task('serve-dev', ['inject', 'lint'], function () {
     });
     /* Watch files for changes and reload */
     gulp.watch('./dev/app/**/*.scss', ['sass']).on('change', dev.reload);
-    gulp.watch('./dev/app/**/*.js', ['lint']).on('change', dev.reload);
+    gulp.watch('./dev/app/**/*.js', ['lint', 'browserify']).on('change', dev.reload);
     gulp.watch('./dev/app/**/*.html').on('change', dev.reload);
   })();
 });

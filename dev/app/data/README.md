@@ -1,15 +1,15 @@
-The fccLndData.json contains data for the site. It is acting as a database containing all the text that is displayed and the paths to the profile images.
+The `fccLndData.json` file contains data for the site. It is acting as a database containing all the text that is displayed and the paths to the profile images.
 
-You will need to modify it in order to list yourselves as campers.
+You will need to modify it in order to list yourself as a camper.
 
-The 'campers page' is a list of all campers taking part at the FCC London meet ups. It shows their details and highlights which point of the FCC track they are.
+The Campers page is a list of all campers taking part at the FCC London meet ups. It shows their details and highlights which point of the FCC track they are.
 
 Using classes we are able to filter which part of the FCC track campers are working on and which parts of the track they have finished.
 
 By doing this people will be able to contact other campers that are at the same point as them to help with pair-programming. It will also allow campers to seek help from people that have already finished the part of the track they are on.
 
 
-Here some tips on how fill fccLndDat.json:
+Here some tips on how to fill-out your details in `fccLndData.json`:
 
 [How to add your data to JSON](#how-to-add-your-data-to-JSON)
 
@@ -17,18 +17,11 @@ Here some tips on how fill fccLndDat.json:
 
 [Classes you can use](#classes-you-can-use)
 
-
-
-
-
-
-
-
 ##### How to add your data to JSON
 
-
 An example of how to fill in your Camper info JSON. You should copy this and fill in with your details:
-```
+
+```json
 
           {
             "name":"Camper",
@@ -69,53 +62,43 @@ If you are the last camper in the JSON don't worry about the comma, but you shou
 ```
 After you finished your block JSON you can verify you have filled it correctly using tools such as [JSON validator](http://jsonlint.com/)
 
-###Filling in
+### Filling in
 
-Using 'ng-Sanitize', JSON fields are rendering as HTML. You can put links and some style on it. This is mainly for use in your Bio info.
+Using `ng-Sanitize`, JSON fields are rendering as HTML. You can put links and some style on it. This is mainly for use in your Bio info.
 
 Just remember if you are inserting a link to add:
  ```
     target="_blank"
  ```
  To make sure that the user is staying on the site and the link is opened in a new tab.
- 
+
  Make sure your bio is fewer than 250 characters to avoid breaking the layout.
-
-
-
-
-
-
 
 ####*Structure of camper object:*####
 
 **name** - your name -> REQUIRED
 
-**class** - list of all classes corrisponding to the FCC sessions you have completed, these are used for the filter on the camper page so the user can select all campers at a particular point -> REQUIRED for references see at [Classes you can use](#classes-you-can-use)
+**class** - list of all classes corresponding to the FCC sessions you have completed, these are used for the filter on the camper page so the user can select all campers at a particular point -> REQUIRED for references see at [Classes you can use](#classes-you-can-use)
 
 **bio**- your presentation -> REQUIRED - max 250 characters !!!!!
 
 **pic** - path to your image  -> REQUIRED // due to space limits your image needs to be hosted on a 3rd party e.g. twitter, github, imgur - to fit layout image need to be a square and around 500px
 
-**email** - youremail@something.com"   -> NOT COMPULSORY
+**email** - youremail@something.com"   -> OPTIONAL
 
-**fcc**  -  path to your freecodecamp profile - -> REQUIRED
+**fcc**  -  path to your Free Code Camp profile - -> REQUIRED
 
-**tw** - path to your Twitter page -> NOT COMPULSORY
+**tw** - path to your Twitter page -> OPTIONAL
 
-**lk**: - path to your LinkInd page -> NOT COMPULSORY
+**lk**: - path to your LinkIn page -> OPTIONAL
 
-**web**  - path to your website / portfolio -> NOT COMPULSORY
+**web**  - path to your website / portfolio -> OPTIONAL
 
-**fb** - path to your facebook -> NOT COMPULSORY
+**fb** - path to your Facebook profile -> OPTIONAL
 
 **challenge** - Last challenge completed or currently working on -> REQUIRED
 
 **date** - date on which your updating status on FCC LND -> REQUIRED
-
-
-
-
 
 ####*Classes you can use:*####
 
@@ -183,5 +166,3 @@ The second level of filtering is to show exactly which points of the FCC track y
 6. Dynamic Web Application Projects - `class='dynamic-web-app'`
 
 7. Nonprofit Projects - `class = 'NP-projects'`
-
-

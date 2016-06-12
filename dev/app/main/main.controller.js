@@ -1,6 +1,6 @@
 'use strict';
 
-var localData = require('../../app.config') || false;
+var localData = require('../app.config') || false;
 
 module.exports = function mainC($scope, getData) {
   getData.async().then(function (data) {
