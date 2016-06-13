@@ -1,10 +1,7 @@
-(function() {
-  'use strict';
-  app.controller('HeaderController', HeaderController);
+'use strict';
 
-  function HeaderController($scope, $location) {
-    $scope.isActive = function(viewLocation) {
-      return viewLocation === $location.path();
-    };
-  }
-})();
+module.exports = function HeaderController($scope, $location) {
+  $scope.isActive = function (viewLocation) {
+    return viewLocation === $location.path();
+  };
+};

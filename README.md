@@ -1,15 +1,14 @@
-
-# FCC LND web app
+# FCC London Campers Web App
 
 [![Join the chat at https://gitter.im/artitudinale1/FCCLND](https://badges.gitter.im/artitudinale1/FCCLND.svg)](https://gitter.im/artitudinale1/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Portal for Free Code Camp London Campers
 
-Hey guys, I have been starting to develop our portal. The aim is to keep track of people learning with the Free Code Camp curriculum in London. This is so that we have an easy tool to keep in touch with each other, meet new people and track at which point of the FCC curriculum others are so we can easily pair program with those who are at the same point.
+Hey guys, I have started to develop our portal. The aim is to keep track of people learning with the Free Code Camp curriculum in London. This is so that we have an easy tool to keep in touch with each other, meet new people and track at which point of the FCC curriculum others are so we can easily pair program with those who are at the same point.
 
-It's supposed to be newbie friendly to permit everyone to contribute, therefore it is slightly over-commented, but I'm sure you are with me if everyone can contribute. :)
+It's supposed to be newbie friendly so that everyone can contribute, which is why it is slightly over-commented. :)
 
-There will be issues to resolve using: CSS, HTML, JS, Gulp, Unit Tests and in the future I'd like to migrate from Firebase to MongoDB - probably MongoLab - using NodeJS and ExpressJS to develop our litte CMS.
+There will be issues to resolve using: CSS, HTML, JS, Gulp, Unit Tests and in the future I'd like to migrate from Firebase to MongoDB - probably MongoLab - using NodeJS and ExpressJS to develop our little CMS.
 
 ### INSTALL
 
@@ -17,7 +16,15 @@ There will be issues to resolve using: CSS, HTML, JS, Gulp, Unit Tests and in th
 
 `cd` into the FCCLND folder
 
+Install these packages globally:
+
+`npm install --global bower gulp-cli`
+
+Install NPM Packages:
+
 `npm install`
+
+Install front-end dependencies:
 
 `bower install`
 
@@ -25,8 +32,8 @@ Start developing with live-reload:
 
 `gulp`
 
-###[How to Contributing ](CONTRIBUTING.md)
-###[How to List yourself in Campers page ](dev/app/data/README.md)
+###[How to Contribute](CONTRIBUTING.md)
+###[How to add yourself to the Campers page](dev/app/data/README.md)
 
 ### TECH USED SO FAR
 
@@ -41,9 +48,6 @@ Start developing with live-reload:
 * [AngularJS 1](https://angularjs.org/)
 
 * [Firebase](http://firebase.com/)
-
-
-
 
 ### App Structure
 

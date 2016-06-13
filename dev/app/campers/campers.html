@@ -1,6 +1,8 @@
 <div class="jumbotron clearfix">
   <div id="items" ng-controller="campersC">
+      <!-- build:remove -->
       <h2 class="debug">{{debug}}</h2>
+      <!-- endbuild -->
       <div class="row">
         <div class="col-xs-12 filter">
           <button data-filter="isotope-item" ng-click="filterAll(); showFE=false; showDV=false; showBK=false ">ALL</button>
@@ -38,11 +40,11 @@
             <button data-filter="backend" ng-click="filterNBProj()">No-profit Projects</button>
           </div>
         </div>
-     </div>   
+     </div>
 
      <div class="row">
       <section  data-iso-repeat="collection" id="campers-container">
 
       </section>
-     </div> 
+     </div>
 </div>
