@@ -2,9 +2,9 @@
 
 We welcome and encourage pull requests from members of our Free Code Camp study group. Follow the steps below to get started:
 
-1.  Find an issue that we need help with by filtering the issues by the [Help Wanted](https://github.com/artitudinale1/FCCLND/labels/help%20wanted) tag.
+1.  Find an issue that we need help with by filtering the issues by the [Help Wanted](https://github.com/FreeCodeCampLondon/FCCLND/labels/help%20wanted) tag.
 2.  Let us know that you want to help by posting a comment on the issue.
-3.  If you need help or want to discuss further feel free to leave a message in our [![Join the chat at https://gitter.im/artitudinale1/FCCLND](https://badges.gitter.im/artitudinale1/FCCLND.svg)](https://gitter.im/artitudinale1/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
+3.  If you need help or want to discuss further feel free to leave a message in our [![Join the chat at https://gitter.im/FreeCodeCampLondon/FCCLND](https://badges.gitter.im/FreeCodeCampLondon/FCCLND.svg)](https://gitter.im/FreeCodeCampLondon/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 4.  [Fork and clone](#forking-and-cloning-locally) the main repository
 5.  Create a new branch named according to the issue you are working on. The name should be prefixed as in the below table:
 
@@ -24,7 +24,7 @@ We welcome and encourage pull requests from members of our Free Code Camp study 
 
 ## Forking and Cloning Locally
 
-1.  Go to the main page for the repository: <https://github.com/artitudinale1/FCCLND>
+1.  Go to the main page for the repository: <https://github.com/FreeCodeCampLondon/FCCLND>
 2.  Click on the 'Fork' button in the upper right hand corner. [Detailed instructions here](https://help.github.com/articles/fork-a-repo).
 3.  Once this is done you will be taken to your copy of the repository at `yourUserName/FCCLND`
 4.	Clone your fork locally and `cd` into the new directory:
@@ -35,7 +35,7 @@ We welcome and encourage pull requests from members of our Free Code Camp study 
 
 4.  Add the main repository as a remote branch so that you can rebase later
 
-    `git remote add upstream https://github.com/artitudinale1/FCCLND.git`
+    `git remote add upstream https://github.com/FreeCodeCampLondon/FCCLND.git`
 
 
 ## Rebasing from Upstream
