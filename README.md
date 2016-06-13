@@ -1,6 +1,6 @@
 # FCC London Campers Web App
 
-[![Join the chat at https://gitter.im/artitudinale1/FCCLND](https://badges.gitter.im/artitudinale1/FCCLND.svg)](https://gitter.im/artitudinale1/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/artitudinale1/FCCLND](https://badges.gitter.im/FreeCodeCampLondon/FCCLND.svg)](https://gitter.im/FreeCodeCampLondon/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Portal for Free Code Camp London Campers
 
@@ -12,7 +12,7 @@ There will be issues to resolve using: CSS, HTML, JS, Gulp, Unit Tests and in th
 
 ### INSTALL
 
-`git clone https://github.com/artitudinale1/FCCLND.git`
+`git clone https://github.com/FreeCodeCampLondon/FCCLND.git`
 
 `cd` into the FCCLND folder
 
