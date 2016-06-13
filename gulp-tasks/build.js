@@ -1,12 +1,5 @@
 var gulp = require('gulp');
 var useref = require('gulp-useref');
-var gulpif = require('gulp-if');
-var cleanCss = require('gulp-clean-css');
-var replace = require('gulp-replace');
-var uglify = require('gulp-uglify');
-var htmlmin = require('gulp-htmlmin');
-var rev = require('gulp-rev');
-var revReplace = require('gulp-rev-replace');
 var del = require('del');
 
 /**
@@ -34,22 +27,11 @@ gulp.task('copy:data', function () {
 /**
  * Concatenate front-end dependencies and minify
  */
-gulp.task('optimise', ['browserify', 'inject'], function () {
+gulp.task('useref', ['browserify', 'inject'], function () {
   del('./dist/app/**/*.{html,js,css}');
-  return gulp.src('./dev/app/**/*.html')
+  return gulp.src('./dev/app/**/*.html') 
     .pipe(useref({ searchPath: '.' }))
-    /* This is to ensure that we work from Firebase in production */
-    .pipe(gulpif('*.js', replace('var localData = true;', 'var localData = false;')))
-    .pipe(gulpif('*.js', uglify({ mangle: false }))) // Minify JavaScript
-    .pipe(gulpif('*.js', rev()))
-    .pipe(gulpif('*.css', cleanCss())) // Minify CSS
-    .pipe(gulpif('*.css', rev()))
-    .pipe(revReplace())
-    // .pipe(gulpif('*.html', htmlmin({
-    //   collapseWhitespace: true,
-    //   preserveLineBreaks: true
-    // })))
     .pipe(gulp.dest('./dist/app'));
 });
 
-gulp.task('build', ['copy:fonts', 'copy:images', 'copy:data', 'optimise']);
+gulp.task('build', ['copy:fonts', 'copy:images', 'copy:data', 'useref']);
