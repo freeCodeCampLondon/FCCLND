@@ -1,5 +1,3 @@
-var localData = true;
-
 (function() {
   'use strict';
   if (localData) {
@@ -23,12 +21,12 @@ var localData = true;
         async: function() {
           var ref = new Firebase("https://glowing-fire-4904.firebaseio.com/FccLond-data/");
           var obj = new $firebaseObject(ref).$loaded().then(function(res) {
-            return res
+            return res;
           });
           return obj;
         }
-      }
+      };
       return getData;
-    }])
+    }]);
   }
 })();

@@ -1,5 +1,5 @@
+(function() {
   'use strict';
-
   /**
    * @ngdoc overview
    * @name freeCodeLondonersCampApp
@@ -22,3 +22,4 @@
         redirectTo: '/'
       });
   });
+})();

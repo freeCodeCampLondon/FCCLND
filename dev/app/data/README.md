@@ -1,11 +1,13 @@
-The fccLndDat.json contains data for our little site. Is acting as our database containing all the text displayed and all the path to the images displayed.
+The fccLndData.json contains data for the site. It is acting as a database containing all the text that is displayed and the paths to the profile images.
 
-You will need to modify it in order to list your self as campers.
+You will need to modify it in order to list yourselves as campers.
 
+The 'campers page' is a list of all campers taking part at the FCC London meet ups. It shows their details and highlights which point of the FCC track they are.
 
-Campers page is supposed to list all campers taking part at the FCC London meet ups, their details and highlight at which point of the FCC track are.
+Using classes we are able to filter which part of the FCC track campers are working on and which parts of the track they have finished.
 
-Through classes we are able then to filter campers are working or have completed some FCC track session and are willing to get contact from other campers in order to pair programming on specific FCC track point.
+By doing this people will be able to contact other campers that are at the same point as them to help with pair-programming. It will also allow campers to seek help from people that have already finished the part of the track they are on.
+
 
 Here some tips on how fill fccLndDat.json:
 
@@ -25,38 +27,38 @@ Here some tips on how fill fccLndDat.json:
 ##### How to add your data to JSON
 
 
-You should duplicate/fill in a JSON block of this kind:
+An example of how to fill in your Camper info JSON. You should copy this and fill in with your details:
 ```
 
           {
-            "name":"Camper 3",
+            "name":"Camper",
             "class":"frontend react html-css bootstrap FE-projects",
-            "bio":"Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-            "pic":"assets/images/camper.png",
+            "bio":"Hi I am Camper and I love web development!",
+            "pic":"http://external-image-host.com/your-image",
             "email":"something@gmail.com",
-            "fcc":"http://google.com",
-            "tw":"http://google.com",
-            "lk":"http://google.com",
-            "web":"http://google.com",
-            "fb":"http://google.com",
+            "fcc":"http://freecodecamp.com/camper",
+            "tw":"http://twitter.com/camper",
+            "lk":"https://uk.linkedin.com/in/camper",
+            "web":"http://my-portfolio.com",
+            "fb":"http://facebook.com/camper",
             "challenge":"Pig Latin",
             "date":"24/4/16"
          },
 ```
 
-pay attention that if your not first camper the block over your should end with
+Unless you are the first camper, make sure the block before you ends with:
 
 ```
 '},'
 ```
 
-and again if you have other campers after your json block, your one need to end:
+and again if you have other campers after your JSON block, your one should end with:
 
 ```
 '},'
 ```
 
-If you are the last campers in the JSON don't worry about comma, but should have other parenthesis after:
+If you are the last camper in the JSON don't worry about the comma, but you should make sure  you have other parenthesis after your block:
 
 ```
 '         } //CLOSING YOU JSON BLOCK
@@ -65,19 +67,19 @@ If you are the last campers in the JSON don't worry about comma, but should have
 }
 '
 ```
-After you filled the JSON you can verify you have been filled correcly using tools such as [JSON validator](http://jsonlint.com/)
+After you finished your block JSON you can verify you have filled it correctly using tools such as [JSON validator](http://jsonlint.com/)
 
 ###Filling in
 
-Thanks to ng-Sanitize, JSON fields are rendering HTML. So you can put links and quick style on it. Mainly you may want to use it for your Bio info.
+Using 'ng-Sanitize', JSON fields are rendering as HTML. You can put links and some style on it. This is mainly for use in your Bio info.
 
 Just remember if you are inserting a link to add:
  ```
     target="_blank"
  ```
- This way our little page will be still on user sight.
+ To make sure that the user is staying on the site and the link is opened in a new tab.
  
- We suggest your bio to be not longer than 120 words to avoid break layout. 
+ Make sure your bio is fewer than 250 characters to avoid breaking the layout.
 
 
 
@@ -89,11 +91,11 @@ Just remember if you are inserting a link to add:
 
 **name** - your name -> REQUIRED
 
-**class** - fill in with class corrisponding FCC sessions you have completed, that's use for filter your profile on camper page -> REQUIRED for references see at [Classes you can use](#classes-you-can-use)
+**class** - list of all classes corrisponding to the FCC sessions you have completed, these are used for the filter on the camper page so the user can select all campers at a particular point -> REQUIRED for references see at [Classes you can use](#classes-you-can-use)
 
-**bio**- your presentation -> REQUIRED - max 120 words !!!!!
+**bio**- your presentation -> REQUIRED - max 250 characters !!!!!
 
-**pic** - path to your image  -> REQUIRED // due to host space your image need to be host within 3rd party: twitter, github and so on - down to layout need to be a square size suggested  500px by 500px
+**pic** - path to your image  -> REQUIRED // due to space limits your image needs to be hosted on a 3rd party e.g. twitter, github, imgur - to fit layout image need to be a square and around 500px
 
 **email** - youremail@something.com"   -> NOT COMPULSORY
 
@@ -107,7 +109,7 @@ Just remember if you are inserting a link to add:
 
 **fb** - path to your facebook -> NOT COMPULSORY
 
-**challenge** - Last  challenge performed or performing on FCC -> REQUIRED
+**challenge** - Last challenge completed or currently working on -> REQUIRED
 
 **date** - date on which your updating status on FCC LND -> REQUIRED
 
@@ -117,17 +119,17 @@ Just remember if you are inserting a link to add:
 
 ####*Classes you can use:*####
 
-The first level of filtering highlight which of the major FCC session Campers is working or has been working at. Every campers should have one or more. Please insert the session you are working on along with the past one if you are available to help other people with those.
+The first level of filtering highlights which of the main FCC session campers are on or have been working on. Every camper should have at least one of the main classes. Please add the exercise/project you are working on, along with any previous ones that you are available to help other people with.
 
-#####*FILETERING FIRST LEVEL:*#####
+#####*FILTERING FIRST LEVEL:*#####
 
-1. FRONTEND -  `class = "frontend"`  - if you completed all frontend track then `class = "frontend-all"`
+1. FRONTEND -  `class = "frontend"`  - if you completed all frontend track then use `class = "frontend-all"` instead.
 
-2. DATA VISUALIZATION - `class = "data-visual"` - if you completed all data visualizzation track then `class = "dv-all"`
+2. DATA VISUALIZATION - `class = "data-visual"` - if you completed all data visualizzation track then use `class = "dv-all"` instead.
 
-3. BACKEND - `class =" backend"` - if you completed all backend track then `class = "backend-all"`
+3. BACKEND - `class =" backend"` - if you completed all backend track then use `class = "backend-all"` instead.
 
-The second level of filtering is pinpoint out exaclty at where point of the FCC you are. You can have more than one and even all the ones you have completed as long as you are willing help people are at that track point.
+The second level of filtering is to show exactly which points of the FCC track you are on and have done. You can have more than one and even all the ones you have completed. Please only use classes that you are willing to help people who are at that track point with.
 
 #####*FILTERING SECOND LEVEL :*#####
 

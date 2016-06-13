@@ -26,6 +26,7 @@ Start developing with live-reload:
 `gulp`
 
 ###[How to Contributing ](CONTRIBUTING.md)
+###[How to List yourself in Campers page ](dev/app/data/README.md)
 
 ### TECH USED SO FAR
 

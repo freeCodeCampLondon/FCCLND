@@ -14,4 +14,5 @@ var app = angular.module('fccLnd', [
   'ngRoute',
   'ngSanitize',
   'ngMockE2E'
-])
+  'ngSanitize'
+]);
