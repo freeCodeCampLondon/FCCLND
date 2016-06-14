@@ -88,11 +88,13 @@ img{
 */
 
 .jumbotron{
-  padding: 20px;
+  padding: 20px 10px 0 0;
   border: none;
+  max-width: 1400px;
 
   p{
      font-size: 1em;
+     margin: 0 0 7px;
      font-weight: normal;
   }
 }
@@ -104,7 +106,22 @@ img{
 */
 #main{
   padding: 30px 20px;
+
+  .fa-twitter, .fa-facebook-official {
+      display: inline-block;
+      float: left;
+      margin-right: 2%;
+  }
 }
+
+.social{
+     width: 100%;
+    display: inline-block;
+    margin: 20px 48%;
+    clear: both;
+    float: none;
+}
+
 
 address {
 	margin: 5px 0;
