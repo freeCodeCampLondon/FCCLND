@@ -59,6 +59,12 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.backend .backend-all'
         });
       };
+
+      $scope.filterSupporter = function () {
+        element.isotope({
+          filter: '.fcc-lnd-supporter'
+        });
+      };
       // SECOND LEVEL FE
       $scope.filterHtml = function () {
         element.isotope({
