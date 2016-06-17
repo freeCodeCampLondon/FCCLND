@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var useref = require('gulp-useref');
+var $ = require('gulp-load-plugins')();
 var del = require('del');
 
 /**
@@ -30,7 +30,7 @@ gulp.task('copy:data', function () {
 gulp.task('useref', ['browserify', 'inject'], function () {
   del('./dist/app/**/*.{html,js,css}');
   return gulp.src('./dev/app/**/*.html') 
-    .pipe(useref({ searchPath: '.' }))
+    .pipe($.useref({ searchPath: '.' }))
     .pipe(gulp.dest('./dist/app'));
 });
 
