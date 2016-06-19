@@ -51,7 +51,6 @@ module.exports = function isoRepeat($timeout, $window) {
 
       // FILTERING FUNCTIONS
 
-
       // FIRST LEVEL
       $scope.filterFE = function () {
        $scope.iso.arrange({
@@ -73,6 +72,7 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.backend, .backend-all'
         });
       };
+
       // SECOND LEVEL FE
       $scope.filterHtml = function () {
         $scope.iso.arrange({
@@ -133,8 +133,6 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.adv-FE-projects, frontend-all'
         });
       };
-
-
 
       //DATA VISUAL
       $scope.filterSass = function () {
@@ -203,10 +201,6 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.NP-projects,  .backend-all'
         });
       };
-      
-
-
     }
   };
-
 };
