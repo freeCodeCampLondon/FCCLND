@@ -23,6 +23,7 @@
 =================================================
 */
 
+
 body{
 
   font-family:$copy;
@@ -198,6 +199,7 @@ address {
 /* both item and item content change size */
 .grid-item.is-expanded{
   width: 70%;
+
 }
 .grid-item.is-expanded .grid-item-content {
   width: 100%;
@@ -218,6 +220,41 @@ address {
 }
 
 }
+
+.overlay-content{
+  display: none;
+  position: relative;
+
+}
+.grid-item.is-expanded .grid-item-content {
+  width: 100%;
+  margin:0;
+  padding:0;
+  
+  img{
+  width:45%;
+  float:left;
+  margin: 0;
+  }
+
+
+.grid-item-content {
+  border-radius: 5px;
+  -webkit-transition: width 0.4s, height 0.4s;
+          transition: width 0.4s, height 0.4s;
+
+  .overlay-content{
+  display: block;
+   width:45%;
+  float:left;
+  padding:10px;
+
+}
+
+.grid-item:hover .grid-item-content {
+  cursor: pointer;
+}
+
 
 .overlay-content{
   display: none;
