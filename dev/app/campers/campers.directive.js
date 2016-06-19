@@ -25,31 +25,31 @@ module.exports = function isoRepeat($timeout, $window) {
          }, true);
 
 
-            //CLICK FUNCTION TO EXPAND EACH CAMPERS
-            var grid = document.getElementById('campers-container');
-            grid.addEventListener( 'click', function( event ) {
-                var campers = document.getElementsByClassName('campers');
-                var itemElem = event.target.parentNode.parentNode;
-                for(var i =0; i < campers.length; i++){
-                    campers[i].className = campers[i].className.replace(/\bis-expanded\b/,'');
-                    if(campers[i] == itemElem){
-                          itemElem.classList.toggle('is-expanded');
-                        }
-                    }
-                     $scope.iso.layout();
-             });
+      //CLICK FUNCTION TO EXPAND EACH CAMPERS
+      var grid = document.getElementById('campers-container');
+      grid.addEventListener( 'click', function( event ) {
+          var campers = document.getElementsByClassName('campers');
+          var itemElem = event.target.parentNode.parentNode;
+          for(var i =0; i < campers.length; i++){
+              campers[i].className = campers[i].className.replace(/\bis-expanded\b/,'');
+              if(campers[i] == itemElem){
+                    itemElem.classList.toggle('is-expanded');
+                  }
+              }
+               $scope.iso.layout();
+       });
 
-            angular.element($window).bind('resize', function () {
-                     var campers = document.getElementsByClassName('campers');
-               
-                for(var i =0; i < campers.length; i++){
-                    campers[i].className = campers[i].className.replace(/\bis-expanded\b/,'');
-                    }
-              //  $scope.iso.reloadItems();
-                 //$scope.iso.shuffle() //THAT S HAPPEN WHEN LOAD PAGE
-                 $scope.iso.layout();
-              });
-          });
+      angular.element($window).bind('resize', function () {
+               var campers = document.getElementsByClassName('campers');
+         
+          for(var i =0; i < campers.length; i++){
+              campers[i].className = campers[i].className.replace(/\bis-expanded\b/,'');
+              }
+        //  $scope.iso.reloadItems();
+           //$scope.iso.shuffle() //THAT S HAPPEN WHEN LOAD PAGE
+           $scope.iso.layout();
+        });
+    });
 
         
 
