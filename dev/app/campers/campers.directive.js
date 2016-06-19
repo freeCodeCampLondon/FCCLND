@@ -24,38 +24,33 @@ module.exports = function isoRepeat($timeout, $window) {
                    });
          }, true);
 
-
-      //CLICK FUNCTION TO EXPAND EACH CAMPERS
-      var grid = document.getElementById('campers-container');
-      grid.addEventListener( 'click', function( event ) {
-          var campers = document.getElementsByClassName('campers');
-          var itemElem = event.target.parentNode.parentNode;
-          for(var i =0; i < campers.length; i++){
-              campers[i].className = campers[i].className.replace(/\bis-expanded\b/,'');
-              if(campers[i] == itemElem){
-                    itemElem.classList.toggle('is-expanded');
+      //GENERAL FUNCTION FOR IS-XPAND CLASS
+      function clearExpandClass (camper){
+        var campers = document.getElementsByClassName('campers');  //SELECTING ALL CAMPERS FROM DOM
+        for(var i =0; i < campers.length; i++){
+              campers[i].className = campers[i].className.replace(/\bis-expanded\b/,''); //DELETE is-expanded CLASS FROM ALL CAMPERS
+              if(campers[i] == camper){
+                    camper.classList.toggle('is-expanded'); // THEN TOOGLE CLASS ON ARTICLE ELEMENT
                   }
               }
-               $scope.iso.layout();
+      }
+
+      //CLICK FUNCTION TO EXPAND EACH CAMPERS
+      var campersContainer = document.getElementById('campers-container');
+      campersContainer.addEventListener( 'click', function( event ) {
+          var itemElem = event.target.parentNode.parentNode; //GETTING UP IN THE DOM - SELECT ARTICLE FROM IMG
+              clearExpandClass(itemElem) //CAL FUNCTION TO CLEAR AND TOOGLE IS-EXPAND
+              $scope.iso.layout(); //ITEMS HAS BEEN RESIZING SO WE RE LAYOUT ISOTOPE GRID
        });
 
       angular.element($window).bind('resize', function () {
-               var campers = document.getElementsByClassName('campers');
-         
-          for(var i =0; i < campers.length; i++){
-              campers[i].className = campers[i].className.replace(/\bis-expanded\b/,'');
-              }
-        //  $scope.iso.reloadItems();
-           //$scope.iso.shuffle() //THAT S HAPPEN WHEN LOAD PAGE
-           $scope.iso.layout();
+        clearExpandClass() //CAL FUNCTION TO CLEAR - NO PARAMETER SO NO TOOGLE IS-EXPAND
+        $scope.iso.layout();
         });
-    });
-
-        
+  });
 
 
       // FILTERING FUNCTIONS
-
       // FIRST LEVEL
       $scope.filterFE = function () {
        $scope.iso.arrange({
