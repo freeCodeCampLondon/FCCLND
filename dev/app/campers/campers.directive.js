@@ -51,6 +51,7 @@ module.exports = function isoRepeat($timeout, $window) {
 
 
       // FILTERING FUNCTIONS
+
       // FIRST LEVEL
       $scope.filterFE = function () {
        $scope.iso.arrange({
@@ -74,7 +75,11 @@ module.exports = function isoRepeat($timeout, $window) {
       };
 
       $scope.filterSupporter = function () {
+<<<<<<< HEAD
          $scope.iso.arrange({
+=======
+      $scope.iso.arrange({
+>>>>>>> Tidying up
           filter: '.fcc-lnd-supporter'
         });
       };
@@ -214,9 +219,6 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.NP-projects,  .backend-all'
         });
       };
-      
-
-
     }
   };
 };
