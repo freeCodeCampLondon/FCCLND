@@ -91,6 +91,13 @@ module.exports = function isoRepeat($timeout, $window) {
         });
       };
 
+
+      $scope.filterSupporter = function () {
+         $scope.iso.arrange({
+          filter: '.fcc-lnd-supporter'
+        });
+      };
+
       // SECOND LEVEL FE
       $scope.filterHtml = function () {
         $scope.iso.arrange({
