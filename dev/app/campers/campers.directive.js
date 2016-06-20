@@ -51,7 +51,6 @@ module.exports = function isoRepeat($timeout, $window) {
 
       // FILTERING FUNCTIONS
 
-
       // FIRST LEVEL
       $scope.filterFE = function () {
        $scope.iso.arrange({
@@ -75,10 +74,11 @@ module.exports = function isoRepeat($timeout, $window) {
       };
 
       $scope.filterSupporter = function () {
-        element.isotope({
+         $scope.iso.arrange({
           filter: '.fcc-lnd-supporter'
         });
       };
+
       // SECOND LEVEL FE
       $scope.filterHtml = function () {
         $scope.iso.arrange({
@@ -139,8 +139,6 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.adv-FE-projects, frontend-all'
         });
       };
-
-
 
       //DATA VISUAL
       $scope.filterSass = function () {
@@ -214,5 +212,4 @@ module.exports = function isoRepeat($timeout, $window) {
 
     }
   };
-
 };
