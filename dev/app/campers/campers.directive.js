@@ -70,40 +70,16 @@ module.exports = function isoRepeat($timeout, $window) {
       $scope.filterBK = function () {
         $scope.iso.arrange({
           filter: '.backend, .backend-all'
-<<<<<<< HEAD
+
         });
       };
 
       $scope.filterSupporter = function () {
-<<<<<<< HEAD
-         $scope.iso.arrange({
-=======
       $scope.iso.arrange({
->>>>>>> Tidying up
-          filter: '.fcc-lnd-supporter'
-=======
-
->>>>>>> 6fafd5e3839d5d8d3200f3bde46c8badd4e4f609
-        });
-      };
-
-
-      $scope.filterSupporter = function () {
-         $scope.iso.arrange({
           filter: '.fcc-lnd-supporter'
         });
       };
 
-<<<<<<< HEAD
-
-      $scope.filterSupporter = function () {
-         $scope.iso.arrange({
-          filter: '.fcc-lnd-supporter'
-        });
-      };
-
-=======
->>>>>>> 6fafd5e3839d5d8d3200f3bde46c8badd4e4f609
       // SECOND LEVEL FE
       $scope.filterHtml = function () {
         $scope.iso.arrange({
