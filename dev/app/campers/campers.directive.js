@@ -78,6 +78,7 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.fcc-lnd-supporter'
         });
       };
+
       // SECOND LEVEL FE
       $scope.filterHtml = function () {
         $scope.iso.arrange({
