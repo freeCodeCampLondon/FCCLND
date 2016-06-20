@@ -223,7 +223,6 @@ address {
 .overlay-content{
   display: none;
   position: relative;
-
 }
 .grid-item.is-expanded .grid-item-content {
   width: 100%;
@@ -237,10 +236,12 @@ address {
   }
 
 
+
 .grid-item-content {
   border-radius: 5px;
   -webkit-transition: width 0.4s, height 0.4s;
           transition: width 0.4s, height 0.4s;
+
 
   .overlay-content{
   display: block;
@@ -253,6 +254,35 @@ address {
 .grid-item:hover .grid-item-content {
   cursor: pointer;
 }
+
+
+.overlay-content{
+  display: none;
+  position: relative;
+}
+
+.grid-item-content {
+  border-radius: 5px;
+  -webkit-transition: width 0.4s, height 0.4s;
+          transition: width 0.4s, height 0.4s;
+}
+
+.grid-item:hover .grid-item-content {
+  cursor: pointer;
+}
+
+
+
+.grid-item.is-expanded {
+  z-index: 2;
+}
+
+.grid-item.is-expanded .grid-item-content {
+  background: $darkGreen;
+}
+
+
+
 
 
 .overlay-content{
@@ -345,6 +375,7 @@ div[class^='-filter'],div[class*='-filter']{
 @media screen and (max-width: 700px) {
     .overlay-content{
       font-size: 0.8em;
+
     }
 
     .grid-item.is-expanded,
@@ -356,6 +387,19 @@ div[class^='-filter'],div[class*='-filter']{
   clear: both;
 float: none;
     }
+
+    }
+
+    .grid-item.is-expanded,
+.grid-item.is-expanded .grid-item-content {
+  width: 100%;
+  
+  img{
+  width:100%;
+  clear: both;
+float: none;
+    }
+
 
   .overlay-content{
   width:100%;

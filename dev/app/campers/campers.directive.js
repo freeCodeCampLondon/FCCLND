@@ -49,7 +49,6 @@ module.exports = function isoRepeat($timeout, $window) {
         });
   });
 
-
       // FILTERING FUNCTIONS
 
       // FIRST LEVEL
@@ -71,6 +70,7 @@ module.exports = function isoRepeat($timeout, $window) {
       $scope.filterBK = function () {
         $scope.iso.arrange({
           filter: '.backend, .backend-all'
+<<<<<<< HEAD
         });
       };
 
@@ -81,6 +81,9 @@ module.exports = function isoRepeat($timeout, $window) {
       $scope.iso.arrange({
 >>>>>>> Tidying up
           filter: '.fcc-lnd-supporter'
+=======
+
+>>>>>>> 6fafd5e3839d5d8d3200f3bde46c8badd4e4f609
         });
       };
 
@@ -91,6 +94,7 @@ module.exports = function isoRepeat($timeout, $window) {
         });
       };
 
+<<<<<<< HEAD
 
       $scope.filterSupporter = function () {
          $scope.iso.arrange({
@@ -98,6 +102,8 @@ module.exports = function isoRepeat($timeout, $window) {
         });
       };
 
+=======
+>>>>>>> 6fafd5e3839d5d8d3200f3bde46c8badd4e4f609
       // SECOND LEVEL FE
       $scope.filterHtml = function () {
         $scope.iso.arrange({
