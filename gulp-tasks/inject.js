@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-
+var wiredep = require('wiredep').stream; // Injects bower front-end dependencies
 /**
  * Inject front-end dev dependencies into index.html
  */
