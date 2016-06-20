@@ -22,6 +22,7 @@
 2. GENERAL STYLE OVERWRITING BOOTSTRAP
 =================================================
 */
+
 body{
 
   font-family:$copy;
@@ -136,13 +137,12 @@ address {
 =================================================
 */
 
-#items {
-    margin: 0 auto;
-}
 
-.isotope-item {
+
+.grid-item {
   color: $white;
   border: none;
+  margin:10px 0;
   img{
     width:100%;
     margin: 2%;
@@ -154,55 +154,23 @@ address {
 }
 
 
-.isotope-item:hover .corner-overlay-content {
-    opacity: 0;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-}
-
-.isotope-item .overlay-content {
-    bottom: 0;
-    color: #fff;
-    left: 0;
-    opacity: 0;
-    padding: 30px;
-    position: absolute;
-    right: 0;
-    top: -30px;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.isotope-item .overlay-content h2 {
+.grid-item .overlay-content h2 {
     border-bottom: 1px solid #fff;
     padding: 0 0 12px;
     font-size: 1.3em;
     text-transform: uppercase;
+    margin:5px;
 }
 
-.isotope-item:hover .overlay-content {
-    opacity: 1;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    -moz-transition-delay: 0.3s;
-    -o-transition-delay: 0.3s;
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
+.grid-item .overlay-content {
     ul{
-      position: absolute;
-      bottom: 30px;
+      position: relative;
+      bottom: 0;
       color: #fff;
       text-align: center;
-      width: 95%;
+      width: 100%;
       padding: 0;
       margin: 0;
-      left: 0;
     }
 }
 
@@ -227,39 +195,59 @@ address {
     }
 }
 
-.isotope-item .overlay {
-    border-bottom: 100px solid $darkGreen;;
-    border-left: 100px solid transparent;
-    bottom: 1%;
-    height: 0;
-    opacity: .95;
-    position: absolute;
-    right: 6px;
-    text-indent: -9999px;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    width: 0;
+/* both item and item content change size */
+.grid-item.is-expanded{
+  width: 70%;
+}
+.grid-item.is-expanded .grid-item-content {
+  width: 100%;
+  margin:0;
+  padding:0;
+  
+  img{
+  width:45%;
+  float:left;
+  margin: 0;
+  }
+
+  .overlay-content{
+  display: block;
+   width:45%;
+  float:left;
+  padding:10px;
 }
 
-.isotope-item:hover .overlay {
-    width: 95%;
-    height: 98%;
-    background:$darkGreen;
-    transition: all 0.5s ease-out;
-
 }
 
-.isotope-item .corner-overlay-content {
-    bottom: 15px;
-    color: #fff;
-    position: absolute;
-    right: 20px;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+.overlay-content{
+  display: none;
+  position: relative;
+}
+
+.grid-item-content {
+  border-radius: 5px;
+  -webkit-transition: width 0.4s, height 0.4s;
+          transition: width 0.4s, height 0.4s;
+}
+
+.grid-item:hover .grid-item-content {
+  cursor: pointer;
+}
+
+
+
+.grid-item.is-expanded {
+  z-index: 2;
+}
+
+.grid-item.is-expanded .grid-item-content {
+  background: $darkGreen;
+}
+
+#close{
+position: absolute; 
+right: 0;
+
 }
 
 .filter{
@@ -274,6 +262,8 @@ div[class^='-filter'],div[class*='-filter']{
     margin-top: 10px;
 }
 
+
+
 /*
 =================================================
 7. MEDIA QUERY
@@ -281,10 +271,6 @@ div[class^='-filter'],div[class*='-filter']{
 */
 
 @media screen and (max-width: 1500px) {
-    .isotope-item {
-      border: none;
-    }
-
     .overlay-content{
       font-size: 0.9em;
     }
@@ -295,12 +281,55 @@ div[class^='-filter'],div[class*='-filter']{
     .overlay-content{
       font-size: 0.8em;
     }
+
+
+  /* both item and item content change size */
+.grid-item.is-expanded,
+.grid-item.is-expanded .grid-item-content {
+  width: 100%;
+  
+  img{
+  width:50%;
+  float:left;
+  }
+
+  .overlay-content{
+  display: block;
+   width:50%;
+  float:left;
+  padding:10px;
+}
+
+
+}
+
+
 }
 
 @media screen and (max-width: 700px) {
     .overlay-content{
-      font-size: 1em;
+      font-size: 0.8em;
     }
+
+    .grid-item.is-expanded,
+.grid-item.is-expanded .grid-item-content {
+  width: 100%;
+  
+  img{
+  width:100%;
+  clear: both;
+float: none;
+    }
+
+  .overlay-content{
+  width:100%;
+  clear: both;
+float: none;
+  padding:10px;
+}
+
+}
+
 }
 /*
 =================================================
@@ -311,3 +340,15 @@ div[class^='-filter'],div[class*='-filter']{
   color: red;
   position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+
+

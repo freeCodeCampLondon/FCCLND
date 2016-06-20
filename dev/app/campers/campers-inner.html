@@ -1,9 +1,8 @@
-<div>
-  <article class="{{campersData.class}} col-md-3 col-sm-6 col-xs-12" ng-repeat="campersData in campersData">
+<article class="{{campersData.class}} col-md-3 col-sm-6 col-xs-12 campers grid-item" ng-repeat="campersData in campersData">
+  <div class="grid-item-content clearfix">
     <img ng-src="{{campersData.pic}}" />
-    <div class="overlay"></div>
-    <div class="corner-overlay-content">INFO</div>
     <div class="overlay-content">
+      <span id="close">X</span>
       <h2 ng-bind-html="campersData.name"></h2>
       <p ng-bind-html="campersData.bio"></p>
       <p><strong>Last challenge:</strong> {{campersData.challenge}}</p>
@@ -19,5 +18,6 @@
         <li ng-show="campersData.lk"><a href="{{campersData.lk}}" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a></li>
       </ul>
     </div>
-  </article>
-</div>
+    </div>
+</article>
+
