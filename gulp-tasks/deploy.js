@@ -12,5 +12,5 @@ gulp.task('deploy', ['build'], function () {
     .pipe($.if('*.css', $.cleanCss())) // Minify CSS
     .pipe($.if('*.css', $.rev()))
     .pipe($.revReplace())
-    .pipe($.deploy());
+    .pipe($.ghPages());
 });
