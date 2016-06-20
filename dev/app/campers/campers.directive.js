@@ -70,9 +70,16 @@ module.exports = function isoRepeat($timeout, $window) {
       $scope.filterBK = function () {
         $scope.iso.arrange({
           filter: '.backend, .backend-all'
+
         });
       };
 
+
+      $scope.filterSupporter = function () {
+         $scope.iso.arrange({
+          filter: '.fcc-lnd-supporter'
+        });
+      };
 
       $scope.filterSupporter = function () {
          $scope.iso.arrange({

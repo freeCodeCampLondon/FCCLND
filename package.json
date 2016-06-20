@@ -47,6 +47,7 @@
     "angular-sanitize": "^1.5.6",
     "angularfire": "^1.2.0",
     "firebase": "^2.4.2",
+    "gulp-load-plugins": "^1.2.4",
     "imagesloaded": "^4.1.0"
   }
 }
