@@ -40,8 +40,7 @@
       "fcc": "http://www.freecodecamp.com/chris-alexander",
       "challenge": "Weather App",
       "date": "26/05/16"
-    },
-     {
+    }, {
       "name": "Colin Moore-Hill",
       "email": "itestedthis1@gmail.com",
       "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
@@ -50,7 +49,6 @@
       "lk":"https://www.linkedin.com/in/colinmoorehill",
       "challenge": "Change the path to technology",
       "date": "15/6/16"
-
     }, {
       "name": "working from local json",
       "class": "frontend react html-css bootstrap FE-projects",
