@@ -40,46 +40,7 @@
       "fcc": "http://www.freecodecamp.com/chris-alexander",
       "challenge": "Weather App",
       "date": "26/05/16"
-
-}, {
-      "name": "Camper 5",
-      "class": "ajax",
-      "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-      "pic": "assets/images/camper.png",
-      "challenge": "Pig Latin",
-      "date": "24/4/16"
-    }, {
-      "name": "Camper 6",
-      "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-      "pic": "assets/images/camper.png",
-      "challenge": "Pig Latin",
-      "date": "24/4/16"
-    }, {
-      "name": "Camper 7",
-      "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-      "pic": "assets/images/camper.png",
-      "challenge": "Pig Latin",
-      "date": "24/4/16"
-    }, {
-      "name": "Camper 8",
-      "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-      "pic": "assets/images/camper.png",
-      "challenge": "Pig Latin",
-      "date": "24/4/16"
-    }, {
-      "name": "Camper 9",
-      "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-      "pic": "assets/images/camper.png",
-      "challenge": "Pig Latin",
-      "date": "24/4/16"
-    }, {
-      "name": "Camper 10",
-      "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
-      "pic": "assets/images/camper.png",
-      "challenge": "Pig Latin",
-      "date": "24/4/16"
-    }, {
->>>>>>> conflict
+},{
       "name": "Colin Moore-Hill",
       "email": "itestedthis1@gmail.com",
       "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
