@@ -1,7 +1,5 @@
 'use strict';
 
-require('../../bower_components/isotope/js/jquery-1.7.1.min.js');
-require('../../bower_components/isotope/jquery.isotope.js');
 
 var angular = require('angular');
 require('angular-route');
