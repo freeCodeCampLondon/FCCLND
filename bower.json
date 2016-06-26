@@ -16,8 +16,7 @@
   ],
   "dependencies": {
     "bootstrap-css-only": "^3.3.6",
-    "font-awesome": "^4.6.3",
-    "isotope": "^3.0.1"
+    "font-awesome": "^4.6.3"
   },
   "overrides": {
     "font-awesome": {

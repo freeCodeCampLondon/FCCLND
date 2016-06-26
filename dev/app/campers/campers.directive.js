@@ -1,5 +1,5 @@
 'use strict';
-
+var Isotope = require('isotope-layout');
 var imagesLoaded = require('imagesloaded');
 
 module.exports = function isoRepeat($timeout, $window) {
@@ -14,11 +14,11 @@ module.exports = function isoRepeat($timeout, $window) {
       $timeout(function () {
         var iso;
          imagesLoaded(document.querySelector('#campers-container'), function (instance) {
-            iso = new Isotope( element[0], {  
+            iso = new Isotope( element[0], {
                       layoutMode: 'fitRows',
                       itemSelector: '.campers'
                 });
-            iso.shuffle() 
+            iso.shuffle()
             iso.layout();
             $scope.iso = iso;
                    });
@@ -214,7 +214,7 @@ module.exports = function isoRepeat($timeout, $window) {
           filter: '.NP-projects,  .backend-all'
         });
       };
-      
+
 
 
     }
