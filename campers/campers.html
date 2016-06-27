@@ -7,6 +7,8 @@
           <button data-filter="frontend" ng-click="filterFE(); showFE=true;  showDV=false; showBK=false ">FRONTEND</button>
           <button data-filter="data-visual" ng-click="filterDataVisual(); showDV=true;  showFE=false; showBK=false">DATA VISUALIZATION</button>
           <button data-filter="backend" ng-click="filterBK(); showBK=true; showFE=false; showDV=false">BACKEND</button>
+          <button data-filter="backend" ng-click="filterSupporter()">FCC SUPPORTERS</button>
+
           <div class="frontend-filter " ng-show="showFE">
             <button data-filter="frontend" ng-click="filterHtml()">HTML/CSS</button>
             <button data-filter="frontend" ng-click="filterBootstrap()">Bootsrap</button>
