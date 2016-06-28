@@ -7,10 +7,15 @@ var del = require('del');
 
 gulp.task('sass', function () {
   // Remove pre-complied css
-  del('./.tmp/**/*.css');
+  del('./dist/app/**/*.css');
   // Compile sass
   return gulp.src('dev/app/assets/sass/main.scss')
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.sass({
+      includePaths: [
+        './node_modules/font-awesome/scss',
+        './node_modules/bootstrap-sass/assets/stylesheets'
+      ]
+    }).on('error', $.sass.logError))
     .pipe($.autoprefixer())
-    .pipe(gulp.dest('./.tmp'));
+    .pipe(gulp.dest('./dist/app/'));
 });

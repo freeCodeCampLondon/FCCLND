@@ -8,7 +8,7 @@ var del = require('del');
 
 gulp.task('copy:fonts', function () {
   del('dist/app/assets/fonts/**/*.{ttf,wof,eof,svg}');
-  return gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
+  return gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
     .pipe(gulp.dest('dist/app/assets/fonts/'));
 });
 
@@ -27,11 +27,10 @@ gulp.task('copy:data', function () {
 /**
  * Concatenate front-end dependencies and minify
  */
-gulp.task('useref', ['browserify', 'inject'], function () {
-  del('./dist/app/**/*.{html,js,css}');
-  return gulp.src('./dev/app/**/*.html') 
-    .pipe($.useref({ searchPath: '.' }))
-    .pipe(gulp.dest('./dist/app'));
+gulp.task('copy:html', function () {
+  del('./dist/app/**/*.html');
+  return gulp.src('./dev/app/**/*.html')
+    .pipe(gulp.dest('./dist/app/'));
 });
 
-gulp.task('build', ['copy:fonts', 'copy:images', 'copy:data', 'useref']);
+gulp.task('build', ['copy:fonts', 'copy:images', 'copy:data', 'copy:html', 'browserify']);
