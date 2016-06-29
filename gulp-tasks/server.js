@@ -28,17 +28,16 @@ gulp.task('serve-dev', ['sass', 'lint', 'build', 'browserify'], function () {
 /**
  * Serve Production Version of App
  */
-// gulp.task('serve-build', ['build'], function () {
-//   return (function () {
-//     dist.init({
-//       server: {
-//         baseDir: './dist/app',
-//       },
-//       port: 3000,
-//       ui: {
-//         port: 3010
-//       }
-//     });
-//     gulp.watch(['./tmp/**/*.css', './dev/app/**/*.{js,html}'], ['build']).on('change', dist.reload);
-//   })();
-// });
+gulp.task('serve-build', ['deploy'], function () {
+  return (function () {
+    dist.init({
+      server: {
+        baseDir: './.publish',
+      },
+      port: 3000,
+      ui: {
+        port: 3010
+      }
+    });
+  })();
+});

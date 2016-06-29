@@ -24,9 +24,6 @@ gulp.task('copy:data', function () {
     .pipe(gulp.dest('dist/app/data/'));
 });
 
-/**
- * Concatenate front-end dependencies and minify
- */
 gulp.task('copy:html', function () {
   del('./dist/app/**/*.html');
   return gulp.src('./dev/app/**/*.html')
