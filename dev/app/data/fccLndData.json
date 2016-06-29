@@ -62,7 +62,20 @@
       "fb": "http://google.com",
       "challenge": "Pig Latin",
       "date": "24/4/16"
-    },
+    },{
+     "name": "Hasan San",
+     "class": "backend-all",
+     "bio": "Hi, I'm Hasan! , New to Frontend and JS, had good experience with .NET and C++. Can't attend meet-ups as I live outside of M25 and working at that times :)",
+     "pic": "https://avatars3.githubusercontent.com/u/10577168",
+     "email": "hasansan@gmail.com",
+     "fcc": "https://www.freecodecamp.com/hasansan07",
+     "tw": "https://twitter.com/hasansan07",
+     "lk": "https://www.linkedin.com/in/hasan-hüseyin-şan-b228855b",
+     "web": "http://hasansan.com",
+     "fb": "https://www.facebook.com/hasansan34",
+     "challenge": "Build a Personal Portfolio Webpage Incomplete ",
+     "date": "29/6/2016"
+   },
      {
       "name": "CAMPERS NAME",
       "class": "frontend react html-css bootstrap FE-projects",
