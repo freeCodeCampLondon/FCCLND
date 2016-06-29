@@ -112,7 +112,7 @@ The first level of filtering highlights which of the main FCC session campers ar
 
 3. BACKEND - `class =" backend"` - if you completed all backend track then use `class = "backend-all"` instead.
 
-4. FCC SUPPORTES - `class ="fcc-lnd-supporter"` - use this if you are just started with the FCC track or if you supporting our group and events in general.
+4. FCC SUPPORTERS - `class ="fcc-lnd-supporter"` - use this if you are just started with the FCC track or if you supporting our group and events in general.
 
 
 The second level of filtering is to show exactly which points of the FCC track you are on and have done. You can have more than one and even all the ones you have completed. Please only use classes that you are willing to help people who are at that track point with.
