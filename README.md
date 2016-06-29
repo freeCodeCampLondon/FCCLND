@@ -54,7 +54,7 @@ gulp
 ## Technologies
 
 * [Gulp](http://gulpjs.com) as the task runner
-* [Bootstrap](http://getbootstrap.com) as the front-end
+* [Bootstrap](http://getbootstrap.com) to simplify the design
 * [Sass](http://sass-lang.com) for syntactically awesome custom styles
 * [Font Awesome](http://fontawesome.io) for glyph icons
 * [Browsersync](https://browsersync.io) so that you can live preview changes as you develop
