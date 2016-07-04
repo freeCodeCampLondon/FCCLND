@@ -6,16 +6,12 @@ var dev = browserSync.create('dev');
 /**
  * Serve development version of app
  */
-gulp.task('serve-dev', ['inject', 'lint', 'browserify'], function () {
+gulp.task('serve-dev', ['sass', 'lint', 'build', 'browserify'], function () {
   return (function () { /* Temporary fix to stop this task from running when not called */
     /* Serve development files with browserSync */
     dev.init({
       server: {
-        baseDir: './dev/app',
-        routes: { /* Ensures files from external folders can also be served */
-          '/bower_components': 'bower_components',
-          '/.tmp': '.tmp'
-        }
+        baseDir: './dist/app'
       },
       port: 3001,
       ui: {
@@ -32,17 +28,16 @@ gulp.task('serve-dev', ['inject', 'lint', 'browserify'], function () {
 /**
  * Serve Production Version of App
  */
-gulp.task('serve-build', ['build'], function () {
+gulp.task('serve-build', ['deploy'], function () {
   return (function () {
     dist.init({
       server: {
-        baseDir: './dist/app',
+        baseDir: './.publish',
       },
       port: 3000,
       ui: {
         port: 3010
       }
     });
-    gulp.watch(['./tmp/**/*.css', './dev/app/**/*.{js,html}'], ['build']).on('change', dist.reload);
   })();
 });
