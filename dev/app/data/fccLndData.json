@@ -63,7 +63,7 @@
       "challenge": "Pig Latin",
       "date": "24/4/16"
     },{
-     "name": "Hasan San",
+     "name": "Hasan Sanccc",
      "class": "backend-all",
      "bio": "Hi, I'm Hasan! , New to Frontend and JS, had good experience with .NET and C++. Can't attend meet-ups as I live outside of M25 and working at that times :)",
      "pic": "https://avatars3.githubusercontent.com/u/10577168",
@@ -80,13 +80,14 @@
       "class": "frontend html-css bootstrap FE-projects opp-f basic-algorithm ajax inter-FE inter-algorithm adv-algorithm",
       "bio":"Graduated from General Assembly. Currently working with Rails. Ask me stuff! I can probably help.",
       "email":"Gary@untypeable.com",
+      "pic": "http://placehold.it/500x500",
       "fcc":"https://www.freecodecamp.com/garysiu",
       "tw":"http://twitter.com/madhaha",
       "lk":"https://uk.linkedin.com/in/garysiu",
       "challenge":"Inventory Update",
       "date": "15/6/2016"
    }, {
-      "name": "CAMPERS NAME",
+      "name": "CAMPERS NAMaaE",
       "class": "frontend react html-css bootstrap FE-projects",
       "bio": "Logo for a screen printing company. They wanted a detachable/recognizable brand that didn't need the name of the company.",
       "pic": "http://placehold.it/500x500",
