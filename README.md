@@ -1,60 +1,72 @@
 # FCC London Campers Web App
 
-[![Join the chat at https://gitter.im/artitudinale1/FCCLND](https://badges.gitter.im/FreeCodeCampLondon/FCCLND.svg)](https://gitter.im/FreeCodeCampLondon/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/FreeCodeCampLondon/FCCLND](https://badges.gitter.im/FreeCodeCampLondon/FCCLND.svg)](https://gitter.im/FreeCodeCampLondon/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Portal for Free Code Camp London Campers
+This is a **collaborative**, **beginner-friendly** project to build a portal for those learning to code with Free Code Camp in London, UK. This is to help facilitate coding sessions and provide a collaborative learning experience to fellow Campers.
 
-Hey guys, I have started to develop our portal. The aim is to keep track of people learning with the Free Code Camp curriculum in London. This is so that we have an easy tool to keep in touch with each other, meet new people and track at which point of the FCC curriculum others are so we can easily pair program with those who are at the same point.
+## Aims
 
-It's supposed to be newbie friendly so that everyone can contribute, which is why it is slightly over-commented. :)
+We want to fulfil the following _user stories_ which solve some common problems when learning to code:
++ as a Camper I want to:
+  - meet other Campers, make new friends and build a learning support group within my local area
+  - find other Campers to pair program with who are local and at the same level on the Free Code Camp Curriculum
+  - find fellow Campers for ad-hoc coding sessions in my local area
++ as a coding session organiser I want to:
+  - let other Campers know about the next coding session
+  - know what level attendees are at so that I can tailor the session accordingly and group campers accordingly
 
-There will be issues to resolve using: CSS, HTML, JS, Gulp, Unit Tests and in the future I'd like to migrate from Firebase to MongoDB - probably MongoLab - using NodeJS and ExpressJS to develop our little CMS.
+We do not want to:
++ create a leaderboard: while for some this may add a fun gamification aspect it could discourage others to see how they compare in 'ranking'.
++ create a board for recruiters. Once we have a backend we can have more control over what data is public to discourage this. This is a learning tool not a job board. :smile:
 
-### INSTALL
+## Keeping it Beginner Friendly
 
-`git clone https://github.com/FreeCodeCampLondon/FCCLND.git`
+We want to encourage contributions to this project from Campers in the London area no matter their coding level.
 
-`cd` into the FCCLND folder
+In order to achieve this we will:
++ use the technologies currently taught in the FCC curriculum, i.e.:
+  - ES5 JavaScript
+  - Node
+  - Express
+  - SASS
+  - MongoDB
++ break down larger issues into smaller parts so that beginners can make small changes
++ hold demo sessions at our monthly meet-ups
 
-Install these packages globally:
+## [How to Contribute](CONTRIBUTING.md)
+## [Add yourself to the Campers page](dev/app/data/README.md)
 
-`npm install --global bower gulp-cli`
+## Quick Start
 
-Install NPM Packages:
-
-`npm install`
-
-Install front-end dependencies:
-
-`bower install`
+Run these sequentially in the Terminal
+```shell
+  git clone https://github.com/FreeCodeCampLondon/FCCLND.git
+  cd FCCLND
+  npm install --global gulp-cli browser-sync
+  npm install
+```
 
 Start developing with live-reload:
+```shell
+gulp
+```
 
-`gulp`
+## Technologies
 
-###[How to Contribute](CONTRIBUTING.md)
-###[How to add yourself to the Campers page](dev/app/data/README.md)
+* [Gulp](http://gulpjs.com) as the task runner
+* [Bootstrap](http://getbootstrap.com) to simplify the design
+* [Sass](http://sass-lang.com) for syntactically awesome custom styles
+* [Font Awesome](http://fontawesome.io) for glyph icons
+* [Browsersync](https://browsersync.io) so that you can live preview changes as you develop
+* [Angular 1](https://angularjs.org) for the MVC framework
+* [Isotope](http://isotope.metafizzy.co) for filtering the Campers and displaying in a Masonry Layout
+* [Firebase](http://firebase.com) for the Database (Static JSON)
 
-### TECH USED SO FAR
-
-* [Gulp](http://gulpjs.com/)
-
-* [Bootsrap CSS](http://getbootstrap.com/css/)
-
-* [Font Awesome]( http://fontawesome.io/?utm_source=hackernewsletter)
-
-* [Isotope](http://isotope.metafizzy.co/)
-
-* [AngularJS 1](https://angularjs.org/)
-
-* [Firebase](http://firebase.com/)
-
-### App Structure
+## App Structure
 
 Ideas taken from:
 
 * [Scotch.io Angularjs Best practices directory structure](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
-
-* [Blog Rancle: Angular Gulp Best Practices](http://blog.rangle.io/angular-gulp-bestpractices/)
+* [Blog Rangle: Angular Gulp Best Practices](http://blog.rangle.io/angular-gulp-bestpractices/)
 
 ![FCC LND app structure](./app-structure.png)
