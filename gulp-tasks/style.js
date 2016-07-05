@@ -5,7 +5,7 @@ var del = require('del');
  * Compile sass to css held in .tmp/
  */
 
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   // Remove pre-complied css
   del('./dist/app/**/*.css');
   // Compile sass

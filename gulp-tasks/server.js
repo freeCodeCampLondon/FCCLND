@@ -6,8 +6,8 @@ var dev = browserSync.create('dev');
 /**
  * Serve development version of app
  */
-gulp.task('serve-dev', ['sass', 'lint', 'build', 'browserify'], function () {
-  return (function () { /* Temporary fix to stop this task from running when not called */
+gulp.task('serve-dev', ['sass', 'lint', 'build', 'browserify'], function() {
+  return (function() { /* Temporary fix to stop this task from running when not called */
     /* Serve development files with browserSync */
     dev.init({
       server: {
@@ -28,11 +28,11 @@ gulp.task('serve-dev', ['sass', 'lint', 'build', 'browserify'], function () {
 /**
  * Serve Production Version of App
  */
-gulp.task('serve-build', ['deploy'], function () {
-  return (function () {
+gulp.task('serve-build', ['deploy'], function() {
+  return (function() {
     dist.init({
       server: {
-        baseDir: './.publish',
+        baseDir: './.publish'
       },
       port: 3000,
       ui: {
