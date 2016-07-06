@@ -1,6 +1,5 @@
 'use strict';
 
-
 var angular = require('angular');
 require('angular-route');
 require('angular-sanitize');
@@ -16,7 +15,7 @@ require('angularfire');
 
 var dataSource = (require('./app.config')) ? require('./shared/services/local') : require('./shared/services/firebase');
 
-angular.module('fccLnd', ['firebase', 'ngRoute','ngSanitize'])
+angular.module('fccLnd', ['firebase', 'ngRoute', 'ngSanitize'])
   .config(['$routeProvider', require('./app.routes')])
   .factory('getData', dataSource)
   .controller('mainC', ['$scope', 'getData', require('./main/main.controller')])
