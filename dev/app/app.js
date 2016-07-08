@@ -4,14 +4,8 @@ var angular = require('angular');
 require('angular-route');
 require('angular-sanitize');
 require('angularfire');
-/**
- * @ngdoc overview
- * @name freeCodeLondonersCampApp
- * @description
- * # freeCodeLondonersCampApp
- *
- * Main module of the application.
- */
+
+require('./assets/sass/main.scss');
 
 var dataSource = (require('./app.config')) ? require('./shared/services/local') : require('./shared/services/firebase');
 
