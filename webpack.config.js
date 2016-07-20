@@ -1,23 +1,29 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: __dirname + '/dev/app/index.html',
-  filename: 'index.html',
-  inject: 'body'
-});
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
+var config = {
+  context: __dirname + '/dev/app',
   entry: [
-    './dev/app/app.js'
+    './app.js'
   ],
   output: {
     path: __dirname + '/dist',
-    filename: 'bundle-[hash].js'
+    filename: 'bundle.js'
+  },
+  resolve: {
+    alias: {
+      /* Fixes a problem with isotope */
+      'masonry': 'masonry-layout',
+      'isotope': 'isotope-layout'
+    }
   },
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loader: 'eslint'},
-      {test: /\.html$/, loader: 'html'},
-      {test: /\.scss$/, loader: 'file?name=[name].[hash].css!extract!css!postcss!sass'},
+      {test: /\.html$/, loader: 'raw'},
+      {test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')},
+      {test: /\.json$/, loader: 'json'},
+      {test: /\.(png|jpe?g)$/i, loader: 'url?limit=10000'},
       {test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff&name=assets/fonts/[name].[hash].[ext]'},
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream&name=assets/fonts/[name].[hash].[ext]'},
       {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: 'file?name=assets/fonts/[name].[hash].[ext]'},
@@ -28,6 +34,13 @@ module.exports = {
     return [require('autoprefixer')({})];
   },
   plugins: [
-    HtmlWebpackPluginConfig
+    new HtmlWebpackPlugin({
+      template: __dirname + '/dev/app/index.html',
+      filename: 'index.html',
+      inject: 'body'
+    }),
+    new ExtractTextPlugin('main.css')
   ]
 };
+
+module.exports = config;

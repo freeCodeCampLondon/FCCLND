@@ -7,7 +7,7 @@
   ],
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --inline",
+    "start": "webpack-dev-server --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,17 +21,18 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
-    "browser-sync": "^2.12.12",
     "css-loader": "^0.23.1",
     "eslint": "^3.0.0",
     "eslint-config-xo": "^0.15.2",
     "eslint-loader": "^1.4.1",
-    "extract-loader": "0.0.2",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
     "node-sass": "^3.8.0",
     "postcss-loader": "^0.9.1",
+    "raw-loader": "^0.5.1",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
@@ -47,7 +48,6 @@
     "bootstrap-sass": "^3.3.6",
     "firebase": "^2.4.2",
     "imagesloaded": "^4.1.0",
-    "isotope-layout": "^3.0.1",
-    "masonry-layout": "^4.1.0"
+    "isotope-layout": "^3.0.1"
   }
 }

@@ -8,7 +8,7 @@ module.exports = function isoRepeat($timeout, $window) {
     $scope: {
       items: '=isoRepeat'
     },
-    templateUrl: 'campers/campers-inner.html',
+    template: require('./campers-inner.html'),
 
     link: function($scope, element) {
       $scope.$watch('campersData', function() {
