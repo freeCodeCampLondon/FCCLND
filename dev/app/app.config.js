@@ -3,6 +3,6 @@
 /**
  * Change to switch between local JSON and firebase
  */
-var localData = false;
+var localData = true;
 
 module.exports = localData;

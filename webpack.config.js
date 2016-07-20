@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var config = {
   context: __dirname + '/dev/app',
@@ -22,7 +23,6 @@ var config = {
       {test: /\.js$/, exclude: /node_modules/, loader: 'eslint'},
       {test: /\.html$/, loader: 'raw'},
       {test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')},
-      {test: /\.json$/, loader: 'json'},
       {test: /\.(png|jpe?g)$/i, loader: 'url?limit=10000'},
       {test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/font-woff&name=assets/fonts/[name].[hash].[ext]'},
       {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=application/octet-stream&name=assets/fonts/[name].[hash].[ext]'},
@@ -39,7 +39,17 @@ var config = {
       filename: 'index.html',
       inject: 'body'
     }),
-    new ExtractTextPlugin('main.css')
+    new ExtractTextPlugin('main.css'),
+    new CopyWebpackPlugin([
+      {
+        from: 'data/fccLndData.json',
+        to: 'data'
+      },
+      {
+        from: 'assets/images',
+        to: 'assets/images'
+      }
+    ])
   ]
 };
 
