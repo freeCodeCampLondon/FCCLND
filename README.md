@@ -42,18 +42,20 @@ Run these sequentially in the Terminal
 ```shell
   git clone https://github.com/FreeCodeCampLondon/FCCLND.git
   cd FCCLND
-  npm install --global gulp-cli browser-sync
+  npm install --global webpack webpack-dev-server gh-pages browser-sync
   npm install
 ```
 
 Start developing with live-reload:
 ```shell
-gulp
+npm start
 ```
+
+Open the app in your browser <http://localhost:8080>
 
 ## Technologies
 
-* [Gulp](http://gulpjs.com) as the task runner
+* [Webpack](https://webpack.github.io) as the module bundler
 * [Bootstrap](http://getbootstrap.com) to simplify the design
 * [Sass](http://sass-lang.com) for syntactically awesome custom styles
 * [Font Awesome](http://fontawesome.io) for glyph icons
