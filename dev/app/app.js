@@ -7,7 +7,9 @@ require('angularfire');
 
 require('./assets/sass/main.scss');
 
-var dataSource = (require('./app.config')) ? require('./shared/services/local') : require('./shared/services/firebase');
+var localData = require('./app.config');
+console.log((localData) ? 'Working from Local JSON' : 'Working from Firebase');
+var dataSource = (localData) ? require('./shared/services/local') : require('./shared/services/firebase');
 
 angular.module('fccLnd', ['firebase', 'ngRoute', 'ngSanitize'])
   .config(['$routeProvider', require('./app.routes')])
