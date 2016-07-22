@@ -10,8 +10,9 @@
     "start": "webpack-dev-server --inline --hot",
     "build": "NODE_ENV=production webpack -p",
     "serve": "npm run build && browser-sync start -s './dist'",
-    "gh-pages": "gh-pages -r FreeCodeCampLondon/FCCLND -d ./dist",
+    "gh-pages": "gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh-pages",
+    "deploy:prod": "npm run buid && gh-pages -o upstream -d ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
