@@ -6,8 +6,8 @@ var del = require('del');
  */
 
 gulp.task('copy:fonts', function() {
-  del('dist/app/assets/fonts/**/*.{ttf,wof,eof,svg}');
-  return gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}*')
+  del('dist/app/assets/fonts/**/*.{ttf,wof,eof,eot,svg}');
+  return gulp.src('./dev/app/assets/fonts/**/*.{ttf,woff,eof,eot,svg}*')
     .pipe(gulp.dest('dist/app/assets/fonts/'));
 });
 
