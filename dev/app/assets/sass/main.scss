@@ -15,8 +15,8 @@
 1. IMPORT EXTERNAL FILES
 =================================================
 */
-
-@import "bootstrap";
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "modules/var";
 
 /*
@@ -358,6 +358,7 @@ div[class^='-filter'],div[class*='-filter']{
 
     }
 }
+
 /*
 =================================================
 8. DEBUGGER HELP
@@ -430,4 +431,3 @@ div[class^='-filter'],div[class*='-filter']{
      content: $icon-linkedin;
    }
  }
-

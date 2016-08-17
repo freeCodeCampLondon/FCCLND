@@ -10,11 +10,11 @@
 module.exports = function router($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'main/main.html',
+      template: require('./main/main.html'),
       controller: 'mainC'
     })
     .when('/campers', {
-      templateUrl: 'campers/campers.html',
+      template: require('./campers/campers.html'),
       controller: 'campersC'
     })
     .otherwise({
