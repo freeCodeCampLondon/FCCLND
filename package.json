@@ -12,7 +12,7 @@
     "serve": "npm run build && browser-sync start -s './dist'",
     "gh-pages": "gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh-pages",
-    "deploy:prod": "npm run buid && gh-pages -o upstream -d ./dist",
+    "deploy:prod": "npm run build && gh-pages -o upstream -d ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
