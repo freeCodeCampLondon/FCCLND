@@ -99,6 +99,19 @@
       "fb": "http://google.com",
       "challenge": "Pig Latin",
       "date": "24/4/16"
+    }, {
+      "name": "James Riall",
+      "class": "frontend react html-css bootstrap FE-projects",
+      "bio": "Currently a sales professional, I've completed 95% of the front end track and have made a good start on the React challenges.",
+      "pic": "http://res.cloudinary.com/jamesriall/image/upload/v1465211653/Palace_ecpcri.png",
+      "email": "jamesrariall@gmail.com",
+      "fcc": "https://www.freecodecamp.com/jamesriall",
+      "tw": "https://twitter.com/jamesriall",
+      "lk": "https://www.linkedin.com/in/james-riall-bbb58059",
+      "web": "jamesriall.com",
+      "fb": "https://www.facebook.com/jamesrariall",
+      "challenge": "Camper Leaderboard",
+      "date": "17/08/2016"
     }
   ]
 }
