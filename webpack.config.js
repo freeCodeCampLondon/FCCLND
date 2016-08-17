@@ -43,20 +43,13 @@ var config = {
         loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
       },
       { /* WOFF Fonts */
-        test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/font-woff&name=assets/fonts/[name].[hash].[ext]'
+        test: /\.(woff|woff2)(\?[\s\S]+)?$/,
+        loader: 'url?mimetype=application/font-woff&name=assets/fonts/[name].[hash].[ext]'
       },
-      { /* TTF Fonts */
-        test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=application/octet-stream&name=assets/fonts/[name].[hash].[ext]'
-      },
-      { /* EOT Fonts */
-        test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
+      { /* TTF, EOT & SVG Fonts */
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
         loader: 'file?name=assets/fonts/[name].[hash].[ext]'
-      },
-      { /* SVG Fonts */
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url?limit=10000&mimetype=image/svg+xml&name=assets/fonts/[name].[hash].[ext]'}
+      }
     ]
   },
   postcss: function() {
