@@ -55,6 +55,9 @@
     "bootstrap-sass": "^3.3.6",
     "firebase": "^2.4.2",
     "imagesloaded": "^4.1.0",
-    "isotope-layout": "^3.0.1"
+    "isotope-layout": "^3.0.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-router": "^2.7.0"
   }
 }
