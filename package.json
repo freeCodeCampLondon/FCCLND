@@ -33,6 +33,7 @@
     "eslint": "^3.0.0",
     "eslint-config-xo": "^0.15.2",
     "eslint-loader": "^1.4.1",
+    "expose-loader": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "gh-pages": "^0.11.0",
