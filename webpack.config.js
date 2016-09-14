@@ -39,6 +39,10 @@ var config = {
         test: /\.html$/,
         loader: 'raw'
       },
+      { /* Compile ES6 and JSX to ES5 */
+        test: /\.jsx?$/,
+        loader: 'babel'
+      },
       { /* Compile Sass and extract as separate file */
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
