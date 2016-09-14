@@ -7,12 +7,13 @@
   ],
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot",
-    "build": "NODE_ENV=production webpack -p",
-    "serve": "npm run build && browser-sync start -s './dist'",
-    "gh-pages": "gh-pages -d ./dist",
+    "start": "./node_modules/.bin/webpack-dev-server --inline --hot",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack -p",
+    "serve": "npm run build && ./node_modules/.bin/browser-sync start -s './dist'",
+    "gh-pages": "./node_modules/.bin/gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh-pages",
-    "deploy:prod": "npm run build && gh-pages -o upstream -d ./dist",
+    "deploy:prod": "npm run build && ./node_modules/.bin/gh-pages -o upstream -d ./dist",
+    "lint": "NODE_ENV=development ./node_modules/.bin/eslint dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

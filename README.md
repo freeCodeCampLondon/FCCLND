@@ -42,13 +42,12 @@ Run these sequentially in the Terminal
 ```shell
   git clone https://github.com/FreeCodeCampLondon/FCCLND.git
   cd FCCLND
-  npm install --global webpack webpack-dev-server gh-pages browser-sync
   npm install
 ```
 
 Start developing with live-reload:
 ```shell
-npm start
+  npm start
 ```
 
 Open the app in your browser <http://localhost:8080>
@@ -57,7 +56,7 @@ Open the app in your browser <http://localhost:8080>
 
 * [Webpack](https://webpack.github.io) as the module bundler
 * [Bootstrap](http://getbootstrap.com) to simplify the design
-* [Sass](http://sass-lang.com) for syntactically awesome custom styles
+* [Sass](http://sass-lang.com) for syntactically awesome style sheets
 * [Font Awesome](http://fontawesome.io) for glyph icons
 * [Browsersync](https://browsersync.io) so that you can live preview changes as you develop
 * [Angular 1](https://angularjs.org) for the MVC framework
