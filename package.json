@@ -2,8 +2,10 @@
   "name": "fcclnd-app",
   "version": "1.0.0",
   "description": "Portal for FreeCodeCamp London Campers",
-  "authors": [
-    "Alex <alex.garulli@kurtgeiger.com>"
+  "contributors": [
+    "Alex Garulli",
+    "Chris Alexander",
+    "Danny Lewis"
   ],
   "main": "app.js",
   "scripts": {
@@ -18,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/artitudinale1/FCCLND.git"
+    "url": "https://github.com/FreeCodeCampLondon/FCCLND.git"
   },
   "license": "MIT",
   "private": true,
   "bugs": {
-    "url": "https://github.com/artitudinale1/FCCLND/issues"
+    "url": "https://github.com/FreeCodeCampLondon/FCCLND/issues"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
