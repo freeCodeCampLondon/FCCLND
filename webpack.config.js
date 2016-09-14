@@ -16,14 +16,14 @@ var config = {
     './app.js'
   ],
   output: {
-    path: path.join(__dirname + '/dist'),
+    path: path.join(__dirname, '/dist'),
     filename: '[hash].bundle.js'
   },
   resolve: {
     alias: {
       /* Fixes a problem with isotope dependency resolution */
-      'masonry': 'masonry-layout',
-      'isotope': 'isotope-layout'
+      masonry: 'masonry-layout',
+      isotope: 'isotope-layout'
     }
   },
   module: {
@@ -83,20 +83,20 @@ var config = {
 /**
  * Development Config Options
  **/
- if(isDev) {
-   config.devtool = 'inline-source-map';
-   config.module.loaders = [
-     { /* Expose React to devtools */
-       test: require.resolve('react'),
-       loader: 'expose?React'
-     }
-   ].concat(config.module.loaders);
- }
+if (isDev) {
+  config.devtool = 'inline-source-map';
+  config.module.loaders = [
+    { /* Expose React to devtools */
+      test: require.resolve('react'),
+      loader: 'expose?React'
+    }
+  ].concat(config.module.loaders);
+}
 
 /**
  * Production Config Options
  */
-if(isProd) {
+if (isProd) {
   /* Work from Firebase in Production */
   config.module.loaders.push({
     test: /app.config\.js$/,

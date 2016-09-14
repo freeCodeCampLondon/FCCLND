@@ -1,13 +1,11 @@
 {
-  "extends": "xo",
+  "parser": "babel-eslint",
+  "extends": ["xo-space", "xo-react/space"],
   "env": {
     "browser": true,
     "node": true
   },
   "rules": {
-    /* 2 spaces indentation */
-    "indent": [2, 2, {SwitchCase: 1}],
-    /* no space before parentheses in anonymous function */
-    "space-before-function-paren": [2, "never"],
+    "react/jsx-filename-extension": [0]
   }
 }
