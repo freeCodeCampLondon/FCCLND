@@ -1,5 +1,5 @@
 import React from 'react';
-import {Router, Route, hashHistory} from 'react-router';
+import {Router, Route, browserHistory} from 'react-router';
 import ReactDOM from 'react-dom';
 
 import App from './containers/App';
@@ -23,7 +23,7 @@ import './assets/sass/main.scss';
 //   .controller('HeaderController', ['$scope', '$location', require('./shared/controller')]);
 
 ReactDOM.render((
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}>
       {/*
        <Route path="/" component={Main}/>

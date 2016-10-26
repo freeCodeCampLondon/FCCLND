@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {IndexLink} from 'react-router';
 
 import fcclogo from '../../assets/images/freecodecamp_logo.svg';
 
@@ -12,8 +12,8 @@ const Header = () => (
       <small>London UK Campers</small>
     </div>
     <ul className="nav nav-tabs">
-      <li><Link to="/" activeClassName="active">Home</Link></li>
-      <li><Link to="/campers" activeClassName="active">Campers</Link></li>
+      <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+      <li><IndexLink to="/campers" activeClassName="active">Campers</IndexLink></li>
     </ul>
   </header>
 );
