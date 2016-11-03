@@ -9,7 +9,7 @@
   ],
   "main": "app.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --inline --hot",
+    "start": "./node_modules/.bin/webpack-dev-server --inline --hot --content-base . --history-api-fallback",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack -p",
     "serve": "npm run build && ./node_modules/.bin/browser-sync start -s './dist'",
     "gh-pages": "./node_modules/.bin/gh-pages -d ./dist",

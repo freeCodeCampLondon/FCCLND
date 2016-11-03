@@ -10,27 +10,31 @@
 
 <body ng-app="fccLnd">
 
-  <header>
-    <div class="col-md-2 col-sm-5 col-xs-6">
-      <a href="http://www.freecodecamp.com" target="_blank">
-        <img src="assets/images/freecodecamp_logo.svg" alt="learn to code javascript at Free Code Camp logo London campers site" />
-      </a>
-      <small>London UK Campers</small>
-    </div>
-    <ul class="nav nav-tabs" ng-controller="HeaderController">
-      <li role="presentation" ng-class="{ active: isActive('/') }"><a href="#/">Home</a></li>
-      <li role="presentation" ng-class="{ active: isActive('/campers') }"><a href="#/campers/">Campers</a></li>
-    </ul>
-  </header>
+  <div id="root">
 
-  <div id="wrapper">
-    <div ng-view="">
+    <!-- <header>
+      <div class="col-md-2 col-sm-5 col-xs-6">
+        <a href="http://www.freecodecamp.com" target="_blank">
+          <img src="assets/images/freecodecamp_logo.svg" alt="learn to code javascript at Free Code Camp logo London campers site" />
+        </a>
+        <small>London UK Campers</small>
+      </div>
+      <ul class="nav nav-tabs" ng-controller="HeaderController">
+        <li role="presentation" ng-class="{ active: isActive('/') }"><a href="#/">Home</a></li>
+        <li role="presentation" ng-class="{ active: isActive('/campers') }"><a href="#/campers/">Campers</a></li>
+      </ul> -->
+    <!-- </header> -->
+
+    <div id="wrapper">
+      <div ng-view="">
+      </div>
     </div>
+
+    <footer>
+
+    </footer>
+
   </div>
-
-  <footer>
-
-  </footer>
 </body>
 
 </html>
