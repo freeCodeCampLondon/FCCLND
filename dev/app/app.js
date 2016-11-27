@@ -1,8 +1,10 @@
 import React from 'react';
-import {Router, Route, browserHistory} from 'react-router';
+import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import ReactDOM from 'react-dom';
 
 import App from './containers/App';
+import Main from './views/Main';
+// import Campers from './views/Campers';
 import './assets/sass/main.scss';
 
 // const angular = require('angular');
@@ -25,9 +27,9 @@ import './assets/sass/main.scss';
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
+      <IndexRoute component={Main}/>
       {/*
-       <Route path="/" component={Main}/>
-       <Route path="/campers" component={Campers}/>
+       <Route path="campers" component={Campers}/>
       */}
     </Route>
   </Router>
