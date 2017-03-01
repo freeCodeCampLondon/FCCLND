@@ -13,10 +13,9 @@
     "build": "react-scripts build",
     "build-sass": "node-sass src/ -o src/",
     "watch-sass": "npm run build-sass && node-sass src/ -o src/ --watch --recursive",
-    "serve": "npm run build && ./node_modules/.bin/browser-sync start -s './dist'",
-    "gh-pages": "./node_modules/.bin/gh-pages -d ./dist",
-    "deploy": "npm run build && npm run gh-pages",
-    "deploy:prod": "npm run build && ./node_modules/.bin/gh-pages -o upstream -d ./dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deploy:prod": "npm run build && gh-pages -o upstream -d build"
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,6 @@
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "babel-preset-react": "^6.16.0",
-    "browser-sync": "^2.17.0",
     "eslint": "^3.12.2",
     "eslint-plugin-react": "^6.8.0",
     "gh-pages": "^0.11.0",

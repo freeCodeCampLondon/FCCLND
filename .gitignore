@@ -29,3 +29,6 @@ logs
 dist
 public
 .publish
+
+# Compiled css
+src/**/*.css
