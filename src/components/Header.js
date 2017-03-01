@@ -1,7 +1,7 @@
 import React from 'react';
 import {IndexLink} from 'react-router';
 
-import fcclogo from '../../assets/images/freecodecamp_logo.svg';
+import fcclogo from '../assets/images/freecodecamp_logo.svg';
 
 const Header = () => (
   <header>
