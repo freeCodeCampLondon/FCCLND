@@ -6,7 +6,7 @@ import {render} from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 // custom styles
-import './assets/sass/main.css';
+import './styles/main.css';
 
 // components
 import Main from './views/Main';
