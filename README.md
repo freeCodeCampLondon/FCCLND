@@ -1,6 +1,7 @@
 # FCC London Campers Web App
 
 [![Join the chat at https://gitter.im/FreeCodeCampLondon/FCCLND](https://badges.gitter.im/FreeCodeCampLondon/FCCLND.svg)](https://gitter.im/FreeCodeCampLondon/FCCLND?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Open Source Helpers](https://www.codetriage.com/freecodecamplondon/fcclnd/badges/users.svg)](https://www.codetriage.com/freecodecamplondon/fcclnd)
 
 This is a **collaborative**, **beginner-friendly** project to build a portal for those learning to code with Free Code Camp in London, UK. This is to help facilitate coding sessions and provide a collaborative learning experience to fellow Campers.
 
